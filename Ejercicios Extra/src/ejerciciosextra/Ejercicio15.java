@@ -11,27 +11,45 @@ public class Ejercicio15 {
         int num2 = leer.nextInt();
         System.out.println("¿Qué operación matemática desea realizar?");
         String oper = leer.next();
-        int retorno = operacion(num1, num2, oper);
-        System.out.println("El resultado es "+retorno);
-    }
-    public static int operacion(int num1, int num2, String oper){
-        int resultado=0;
-        switch(oper){
+        switch (oper) {
             case "suma":
-                resultado = num1+num2;
+                int retornoSuma = suma(num1, num2);
+                System.out.println("El resultado es " + retornoSuma);
                 break;
             case "resta":
-                resultado = num1-num2;
+                int retornoResta = resta(num1, num2);
+                System.out.println("El resultado es " + retornoResta);
                 break;
             case "multiplicacion":
-                resultado = num1*num2;
+                int retornoMultiplicacion = multiplicacion(num1, num2);
+                System.out.println("El resultado es " + retornoMultiplicacion);
                 break;
             case "division":
-                resultado = num1/num2;
+                double retornoDivision = division(num1, num2);
+                System.out.println("El resultado es " + retornoDivision);
                 break;
             default:
                 System.out.println("El dato introducido es incorrecto");
         }
-        return resultado;
+    }
+
+    public static int suma(int num1, int num2) {
+        int suma = num1 + num2;
+        return suma;
+    }
+
+    public static int resta(int num1, int num2) {
+        int resta = num1 - num2;
+        return resta;
+    }
+    
+    public static int multiplicacion(int num1, int num2){
+        int multiplicacion = num1*num2;
+        return multiplicacion;
+    }
+    
+    public static double division(int num1, int num2){
+        double division = num1/num2;
+        return division;
     }
 }
