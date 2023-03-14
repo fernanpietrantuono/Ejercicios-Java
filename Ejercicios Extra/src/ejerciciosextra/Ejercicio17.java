@@ -15,7 +15,7 @@ public class Ejercicio17 {
         int cont = 0;
         for (int i = 1; i <= num; i++) {
             if(num%i==0){
-                cont=cont+1;
+                cont+=1;
             }
         }
         boolean primos = (cont==2);
