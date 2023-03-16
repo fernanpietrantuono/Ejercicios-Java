@@ -9,20 +9,16 @@ public class Ejercicio17 {
         Scanner leer = new Scanner(System.in);
         Random claseRandom = new Random();
         String numCadena = "";
-        int cont1 = 0;
-        int cont2 = 0;
-        int cont3 = 0;
-        int cont4 = 0;
-        int cont5 = 0;
+        int cont1 = 0, cont2 = 0, cont3 = 0, cont4 = 0, cont5 = 0;
         System.out.println("Dimensione el vector");
         int n = leer.nextInt();
         int[] vector = new int[n];
         for (int i = 0; i < n; i++) {
-            int randomInt = -1 + claseRandom.nextInt(1+1);
-            randomInt = -1 + claseRandom.nextInt(2+10000);
-            randomInt=randomInt-claseRandom.nextInt(2+9000);
-            if (randomInt<0){
-                randomInt=randomInt*(-1);
+            int randomInt = -1 + claseRandom.nextInt(1 + 1);
+            randomInt = -1 + claseRandom.nextInt(2 + 10000);
+            randomInt = randomInt - claseRandom.nextInt(2 + 9000);
+            if (randomInt < 0) {
+                randomInt = randomInt * (-1);
             }
             randomInt = -1 + claseRandom.nextInt((int) (2 + 10 * Math.pow(10, Math.random() * 4)));
             vector[i] = randomInt;

@@ -33,7 +33,7 @@ public class Ejercicio20 {
         boolean retorno = CheckMagico(matriz, n);
         System.out.println("La matriz es mágica? " + retorno);
     }
-    
+
     public static boolean CheckMagico(int[][] matriz, int n) {
         if (CheckFilas(matriz, n)) {
             if (CheckColumnas(matriz, n)) {
@@ -115,4 +115,5 @@ public class Ejercicio20 {
         boolean diagonales = (suma1 == suma2);
         return diagonales;
     }
+
 }

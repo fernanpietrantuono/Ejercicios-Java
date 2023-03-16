@@ -43,4 +43,5 @@ public class Ejercicio21 {
         System.out.println("Cantidad de alumnos aprobados: " + cont1);
         System.out.println("Cantidad de alumnos desaprobados: " + cont2);
     }
+
 }

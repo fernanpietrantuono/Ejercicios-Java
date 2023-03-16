@@ -47,10 +47,10 @@ public class Ejercicio19 {
         boolean asimetria = (aux == 0);
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < i; j++) {
-                asimetria = (aux == -matriz [i] [j]);
+                asimetria = (aux == -matriz[i][j]);
             }
         }
         return asimetria;
     }
-    
+
 }
