@@ -8,11 +8,11 @@ public class Ejercicio6 {
         Scanner leer = new Scanner(System.in);
         System.out.println("Ingrese un número");
         int num = leer.nextInt();
-        if (num%2==0){
+        if (num % 2 == 0) {
             System.out.println("El número ingresado es par");
-        }else{
-            System.out.println("El número ingresado es impar");            
+        } else {
+            System.out.println("El número ingresado es impar");
         }
     }
-    
+
 }

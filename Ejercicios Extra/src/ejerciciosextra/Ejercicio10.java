@@ -18,7 +18,7 @@ public class Ejercicio10 {
             multiplicacion = leer.nextInt();
         }
         System.out.println("Acertaste! La respuesta correcta de la "
-                + "multiplicación es "+respCorrecta);
+                + "multiplicación es " + respCorrecta);
     }
 
 }

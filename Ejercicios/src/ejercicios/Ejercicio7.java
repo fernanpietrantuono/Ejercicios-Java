@@ -8,9 +8,9 @@ public class Ejercicio7 {
         Scanner leer = new Scanner(System.in);
         System.out.println("Ingrese una palabra");
         String frase = leer.next();
-        if (frase.equals("eureka")){
+        if (frase.equals("eureka")) {
             System.out.println("Correcto");
-        }else{
+        } else {
             System.out.println("Incorrecto");
         }
     }

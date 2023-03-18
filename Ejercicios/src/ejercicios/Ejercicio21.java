@@ -58,14 +58,14 @@ public class Ejercicio21 {
         System.out.println("");
         return matrizP;
     }
-    
-    public static boolean buscarElemento(int [] [] matrizM, int [] [] matrizP){
-        int num = matrizP [0] [0];
+
+    public static boolean buscarElemento(int[][] matrizM, int[][] matrizP) {
+        int num = matrizP[0][0];
         boolean encontrado = false;
         for (int i = 0; i < 8; i++) {
             for (int j = 0; j < 8; j++) {
-                if (matrizM [i] [j] == num) {
-                    encontrado = buscarMatriz (i, j, matrizM, matrizP);
+                if (matrizM[i][j] == num) {
+                    encontrado = buscarMatriz(i, j, matrizM, matrizP);
                     if (encontrado) {
                         return encontrado;
                     }
@@ -74,17 +74,17 @@ public class Ejercicio21 {
         }
         return encontrado;
     }
-    
-    public static boolean buscarMatriz(int i, int j, int [] [] matrizM, int [] [] matrizP){
+
+    public static boolean buscarMatriz(int i, int j, int[][] matrizM, int[][] matrizP) {
         boolean igualdad = true;
-        for (int k = i; k < i+2; k++) {
-            for (int l = j; l < j+2; l++) {
-                if (matrizM [k] [l] != matrizP [k-i] [l-j]) {
+        for (int k = i; k < i + 2; k++) {
+            for (int l = j; l < j + 2; l++) {
+                if (matrizM[k][l] != matrizP[k - i][l - j]) {
                     igualdad = false;
                 }
             }
         }
         return igualdad;
     }
-    
+
 }

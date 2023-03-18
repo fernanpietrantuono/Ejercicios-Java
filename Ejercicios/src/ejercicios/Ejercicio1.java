@@ -9,8 +9,8 @@ public class Ejercicio1 {
         System.out.println("Ingrese dos números");
         int num1 = leer.nextInt();
         int num2 = leer.nextInt();
-        int suma = num1+num2;
-        System.out.println("El resultado es "+suma);
+        int suma = num1 + num2;
+        System.out.println("El resultado es " + suma);
     }
-    
+
 }

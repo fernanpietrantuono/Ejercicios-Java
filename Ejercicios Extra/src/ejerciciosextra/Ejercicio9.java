@@ -11,15 +11,16 @@ public class Ejercicio9 {
         int num2 = leer.nextInt();
         division(num1, num2);
     }
-    public static void division(int num1, int num2){
+
+    public static void division(int num1, int num2) {
         int cont = 0;
-        do{
-            cont=cont+1;
-            if(num1>num2){
-                num1=num1-num2;
+        do {
+            cont = cont + 1;
+            if (num1 > num2) {
+                num1 = num1 - num2;
             }
-            System.out.println("El resto es "+num1);
-            System.out.println("El cociente es "+cont);
-        }while(num1>num2);
+            System.out.println("El resto es " + num1);
+            System.out.println("El cociente es " + cont);
+        } while (num1 > num2);
     }
 }

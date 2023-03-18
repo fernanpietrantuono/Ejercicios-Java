@@ -8,7 +8,7 @@ public class Ejercicio4 {
         Scanner leer = new Scanner(System.in);
         System.out.println("Ingrese un número del 1 al 10");
         int num = leer.nextInt();
-        switch (num){
+        switch (num) {
             case 1:
                 System.out.println("I");
                 break;
@@ -41,7 +41,7 @@ public class Ejercicio4 {
                 break;
             default:
                 System.out.println("El número ingresado es inválido");
-        }        
+        }
     }
-    
+
 }

@@ -11,8 +11,8 @@ public class Ejercicio3 {
         String frase = leer.nextLine();
         String frase1 = frase.toLowerCase();
         String frase2 = frase.toUpperCase();
-        System.out.println("Frase nueva 1: "+frase1);
-        System.out.println("Frase nueva 2: "+frase2);
+        System.out.println("Frase nueva 1: " + frase1);
+        System.out.println("Frase nueva 2: " + frase2);
     }
-    
+
 }
