@@ -13,7 +13,7 @@ public class Ejercicio18 {
         for (int i = 0; i < n; i++) {
             System.out.println("Ingrese el " + (i + 1) + "° número");
             vector[i] = leer.nextInt();
-            suma = suma + vector[i];
+            suma += vector[i];
         }
         System.out.println("El resultado es " + suma);
     }

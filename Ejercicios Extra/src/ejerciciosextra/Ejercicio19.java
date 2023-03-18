@@ -1,5 +1,6 @@
 package ejerciciosextra;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Ejercicio19 {
@@ -10,6 +11,7 @@ public class Ejercicio19 {
         int n = leer.nextInt();
         int[] vector1 = new int[n];
         int[] vector2 = new int[n];
+        Arrays.equals(vector1, vector2);
         for (int i = 0; i < n; i++) {
             vector1[i] = (int) (Math.random() * 10);
             vector2[i] = (int) (Math.random() * 10);
@@ -29,7 +31,7 @@ public class Ejercicio19 {
     public static boolean vectores(int[] vector1, int[] vector2, int n) {
         boolean igualdad = false;
         for (int i = 0; i < n; i++) {
-            igualdad = (vector1[i] == vector2[i]);
+            igualdad = (Arrays.equals(vector1, vector2));
         }
         return igualdad;
     }

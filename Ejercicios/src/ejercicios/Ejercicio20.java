@@ -16,8 +16,7 @@ public class Ejercicio20 {
                 System.out.println("Ingrese un número para la posición " + i + "," + j);
                 matriz[i][j] = leer.nextInt();
                 while ((matriz[i][j] < 0) || (matriz[i][j] > 9)) {
-                    System.out.println("El valor ingresado no está dentro de "
-                            + "los parámetros. Por favor intente nuevamente");
+                    System.out.println("El valor ingresado no está dentro de los parámetros. Por favor intente nuevamente");
                     matriz[i][j] = leer.nextInt();
                 }
             }
