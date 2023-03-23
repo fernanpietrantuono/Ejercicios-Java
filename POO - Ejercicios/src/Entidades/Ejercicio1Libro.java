@@ -1,7 +1,7 @@
 package Entidades;
 
 public class Ejercicio1Libro {
-    public int ISBN;
+    public long ISBN;
     public String titulo;
     public String autor;
     public int paginas;
@@ -9,18 +9,18 @@ public class Ejercicio1Libro {
     public Ejercicio1Libro() {
     }
 
-    public Ejercicio1Libro(int ISBN, String titulo, String autor, int paginas) {
+    public Ejercicio1Libro(long ISBN, String titulo, String autor, int paginas) {
         this.ISBN = ISBN;
         this.titulo = titulo;
         this.autor = autor;
         this.paginas = paginas;
     }
 
-    public int getISBN() {
+    public long getISBN() {
         return ISBN;
     }
 
-    public void setISBN(int ISBN) {
+    public void setISBN(long ISBN) {
         this.ISBN = ISBN;
     }
 
