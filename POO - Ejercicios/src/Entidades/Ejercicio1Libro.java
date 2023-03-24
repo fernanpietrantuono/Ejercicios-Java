@@ -47,5 +47,10 @@ public class Ejercicio1Libro {
     public void setPaginas(int paginas) {
         this.paginas = paginas;
     }
+
+    @Override
+    public String toString() {
+        return "Ejercicio1Libro{" + "ISBN= " + ISBN + ", titulo= " + titulo + ", autor= " + autor + ", paginas= " + paginas + '}';
+    }
     
 }
