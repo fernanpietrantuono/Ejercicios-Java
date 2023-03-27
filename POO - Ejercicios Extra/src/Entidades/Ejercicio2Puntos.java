@@ -65,5 +65,4 @@ public class Ejercicio2Puntos {
         this.y2 = y2;
     }
 
-    
 }

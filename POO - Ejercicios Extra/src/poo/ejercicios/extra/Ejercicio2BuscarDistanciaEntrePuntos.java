@@ -9,5 +9,5 @@ public class Ejercicio2BuscarDistanciaEntrePuntos {
         d1.CrearPuntos();
         System.out.println(d1.distancia());
     }
-    
+
 }

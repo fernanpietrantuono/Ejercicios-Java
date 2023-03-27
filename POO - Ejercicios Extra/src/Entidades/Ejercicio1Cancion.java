@@ -5,8 +5,6 @@ public class Ejercicio1Cancion {
     public String autor;
 
     public Ejercicio1Cancion() {
-        titulo = "";
-        autor = "";
     }
 
     public Ejercicio1Cancion(String titulo, String autor) {
