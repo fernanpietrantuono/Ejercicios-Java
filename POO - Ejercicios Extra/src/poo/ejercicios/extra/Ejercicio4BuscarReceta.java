@@ -4,8 +4,8 @@ import Entidades.Ejercicio4Cocina;
 import java.util.Scanner;
 
 public class Ejercicio4BuscarReceta {
-
-    public static void main(String[] args) {
+    
+    public static void main(String[] args) throws InterruptedException {
         Scanner leer = new Scanner(System.in);
         Ejercicio4Cocina r1 = new Ejercicio4Cocina();
         int opc;
@@ -38,6 +38,7 @@ public class Ejercicio4BuscarReceta {
                     salir = salir.toLowerCase();
                     if ("si".equals(salir)) {
                         System.out.println("CERRANDO SESION");
+                        Thread.sleep(2500);
                         fin = 1;
                     } else if ("no".equals(salir)) {
                         System.out.println("Regresando al menu");
@@ -51,5 +52,5 @@ public class Ejercicio4BuscarReceta {
             }
         }
     }
-
+    
 }
