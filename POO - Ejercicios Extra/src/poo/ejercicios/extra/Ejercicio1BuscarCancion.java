@@ -14,5 +14,5 @@ public class Ejercicio1BuscarCancion {
         c1.setAutor(leer.next());
         System.out.println(c1);
     }
-    
+
 }
