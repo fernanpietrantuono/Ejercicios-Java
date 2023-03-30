@@ -60,7 +60,7 @@ public class Ejercicio4Cocina {
     }
 
     public void ActualizarRecetas() {
-        Scanner lec = new Scanner(System.in).useDelimiter("\n");
+        Scanner leer = new Scanner(System.in).useDelimiter("\n");
         this.receta = receta;
         String resp;
         int cont = 0;
@@ -73,13 +73,13 @@ public class Ejercicio4Cocina {
                 }
                 if (j == 0) {
                     System.out.println("Ingrese el nombre de su receta");
-                    receta[i][j] = lec.next();
+                    receta[i][j] = leer.next();
                 }
                 if (j > 0) {
                     System.out.println("Ingrese el ingrediente " + j + " de su receta");
-                    receta[i][j] = lec.next();
+                    receta[i][j] = leer.next();
                     System.out.println("¿Quiere seguir ingresando ingredientes?");
-                    resp = lec.next();
+                    resp = leer.next();
                     if (resp.equalsIgnoreCase("no")) {
                         break;
                     }
@@ -89,7 +89,7 @@ public class Ejercicio4Cocina {
                 System.out.println(" ");
                 resp = "si";
                 System.out.println("¿Quiere seguir ingresando recetas?");
-                resp = lec.next();
+                resp = leer.next();
                 if (resp.equalsIgnoreCase("no")) {
                     break;
                 }
@@ -99,11 +99,11 @@ public class Ejercicio4Cocina {
     }
 
     public void BuscarIngrediente() {
-        Scanner lec = new Scanner(System.in).useDelimiter("\n");
+        Scanner leer = new Scanner(System.in).useDelimiter("\n");
         this.receta = receta;
         String ingrediente;
-        System.out.println("Ingrese un ingredinete");
-        ingrediente = lec.next();
+        System.out.println("Ingrese un ingrediente");
+        ingrediente = leer.next();
         int[] recetas = new int[20];
         int aux;
         for (int i = 0; i < 20; i++) {
@@ -116,7 +116,7 @@ public class Ejercicio4Cocina {
                 }
             }
         }
-        System.out.println("El ingrediente se encuenta presente en las siguentes recetas: ");
+        System.out.println("El ingrediente se encuentra presente en las siguentes recetas: ");
         for (int i = 0; i < 10; i++) {
             for (int j = 0; j < 10; j++) {
                 aux = recetas[i];
