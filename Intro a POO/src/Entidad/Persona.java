@@ -1,25 +1,18 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Entidad;
 
-/**
- *
- * @author Daniel Pietrantuono
- */
 public class Persona {
 
     public String nombre;
-    public int dni;
+    public long dni;
     public String apellido;
 
-    public Persona(String nombre, int dni, String apellido) {
+    public Persona() {
+    }
+    
+    public Persona(String nombre, long dni, String apellido) {
         this.nombre = nombre;
         this.dni = dni;
         this.apellido = apellido;
-        
     }
 
     public String getNombre() {
@@ -30,11 +23,11 @@ public class Persona {
         this.nombre = nombre;
     }
 
-    public int getDni() {
+    public long getDni() {
         return dni;
     }
 
-    public void setDni(int dni) {
+    public void setDni(long dni) {
         this.dni = dni;
     }
 
@@ -44,6 +37,11 @@ public class Persona {
 
     public void setApellido(String apellido) {
         this.apellido = apellido;
+    }
+
+    @Override
+    public String toString() {
+        return "Persona{" + "nombre=" + nombre + ", dni=" + dni + ", apellido=" + apellido + '}';
     }
     
 }
