@@ -15,6 +15,7 @@ public class Ejercicio1EcuacionDeRaices {
         calculo1.setB(leer.nextInt());
         calculo1.setC(leer.nextInt());
         rs.getDiscrimante(calculo1);
+        rs.calcular(rs, calculo1);
     }
 
 }
