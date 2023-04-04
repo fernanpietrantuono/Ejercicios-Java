@@ -1,4 +1,4 @@
-package poo.ejercicios;
+package Ejecutores;
 
 import Entidades.Ejercicio4Rectangulo;
 import java.util.Scanner;

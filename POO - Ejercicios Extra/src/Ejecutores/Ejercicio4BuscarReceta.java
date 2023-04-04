@@ -1,4 +1,4 @@
-package poo.ejercicios.extra;
+package Ejecutores;
 
 import Entidades.Ejercicio4Cocina;
 import java.util.Scanner;

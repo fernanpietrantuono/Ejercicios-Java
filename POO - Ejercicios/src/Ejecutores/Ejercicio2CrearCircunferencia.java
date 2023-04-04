@@ -1,4 +1,4 @@
-package poo.ejercicios;
+package Ejecutores;
 
 import Entidades.Ejercicio2Circunferencia;
 import java.util.Scanner;

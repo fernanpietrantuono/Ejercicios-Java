@@ -1,4 +1,4 @@
-package poo.ejercicios.extra;
+package Ejecutores;
 
 import Entidades.Ejercicio1Cancion;
 import java.util.Scanner;

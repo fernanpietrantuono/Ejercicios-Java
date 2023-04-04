@@ -1,4 +1,4 @@
-package poo.ejercicios;
+package Ejecutores;
 
 import Entidades.Ejercicio3Operacion;
 import java.util.Scanner;
