@@ -2,12 +2,10 @@ package Ejecutores;
 
 import Entidades.Ejercicio3Persona;
 import Servicios.Ejercicio3PersonaServicio;
-import java.util.Scanner;
 
 public class Ejercicio3RegistrarPersona {
 
     public static void main(String[] args) {
-        Scanner leer = new Scanner(System.in).useDelimiter("\n");
         Ejercicio3PersonaServicio ps = new Ejercicio3PersonaServicio();
         Ejercicio3Persona p1 = ps.crearPersona();
         Ejercicio3Persona p2 = ps.crearPersona();
