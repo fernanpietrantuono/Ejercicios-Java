@@ -33,7 +33,7 @@ public class Ejercicio5Persona {
 
     @Override
     public String toString() {
-        return "Ejercicio5Persona{" + "Nombre = " + nombre + "\nFecha De Nacimiento = " + fechaDeNacimiento + '}';
+        return "{" + "Nombre = " + nombre + "\nFecha De Nacimiento = " + fechaDeNacimiento + '}';
     }
     
 }
