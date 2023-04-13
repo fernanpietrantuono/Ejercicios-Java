@@ -4,7 +4,7 @@ import Entidades.Ejercicio1CuentaBancaria;
 import java.util.Scanner;
 
 public class Ejercicio1CuentaBancariaServicios {
-    private Scanner leer = new Scanner(System.in).useDelimiter("\n");
+    Scanner leer = new Scanner(System.in).useDelimiter("\n");
     Ejercicio1CuentaBancaria cuenta = new Ejercicio1CuentaBancaria();
 
     public void crearCuenta() {
