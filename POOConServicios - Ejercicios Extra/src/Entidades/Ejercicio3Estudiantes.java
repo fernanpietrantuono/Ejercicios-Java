@@ -1,15 +1,15 @@
 package Entidades;
 
-public class Ejercicio4Estudiantes {
+public class Ejercicio3Estudiantes {
 
     public String nombre;
     public int edad;
     public int notaMedia;
 
-    public Ejercicio4Estudiantes() {
+    public Ejercicio3Estudiantes() {
     }
 
-    public Ejercicio4Estudiantes(String nombre, int edad, int notaMedia) {
+    public Ejercicio3Estudiantes(String nombre, int edad, int notaMedia) {
         this.nombre = nombre;
         this.edad = edad;
         this.notaMedia = notaMedia;

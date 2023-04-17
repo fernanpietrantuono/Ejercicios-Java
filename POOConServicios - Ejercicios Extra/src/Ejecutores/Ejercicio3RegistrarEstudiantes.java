@@ -1,16 +1,16 @@
 package Ejecutores;
 
-import Entidades.Ejercicio4Estudiantes;
-import Servicios.Ejercicio4EstudiantesServicio;
+import Entidades.Ejercicio3Estudiantes;
+import Servicios.Ejercicio3EstudiantesServicio;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Ejercicio4RegistrarEstudiantes {
+public class Ejercicio3RegistrarEstudiantes {
 
     public static void main(String[] args) {
         Scanner leer = new Scanner (System.in);
-        Ejercicio4EstudiantesServicio registro = new Ejercicio4EstudiantesServicio();
-        Ejercicio4Estudiantes estudiante;
+        Ejercicio3EstudiantesServicio registro = new Ejercicio3EstudiantesServicio();
+        Ejercicio3Estudiantes estudiante;
         ArrayList lista = new ArrayList();
         String resp = " ";
         do {
