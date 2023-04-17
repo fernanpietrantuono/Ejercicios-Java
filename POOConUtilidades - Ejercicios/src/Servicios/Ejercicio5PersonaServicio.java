@@ -16,7 +16,8 @@ public class Ejercicio5PersonaServicio {
         int dia = leer.nextInt();
         int mes = leer.nextInt();
         int anio = leer.nextInt();
-        Date fechaDeNacimiento = new Date(anio - 1900, mes + 1, dia);
+        Date fechaDeNacimiento = new Date(anio - 1900, mes - 1, dia);
+        calcularEdad(fechaDeNacimiento);
         return new Ejercicio5Persona(nombre, fechaDeNacimiento);
     }
 
