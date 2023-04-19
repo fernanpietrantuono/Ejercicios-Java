@@ -1,13 +1,16 @@
 package Servicios;
 
 import Entidades.Ejercicio2Ahorcado;
+import com.sun.glass.events.KeyEvent;
+import java.awt.AWTException;
+import java.awt.Robot;
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class Ejercicio2AhorcadoServicio {
-
-    public Scanner leer = new Scanner(System.in);
-
+    
+    public Scanner leer = new Scanner(System.in).useDelimiter("\n");
+    
     public Ejercicio2Ahorcado crearJuego() {
         System.out.println("Ingrese una palabra a adivinar");
         String palabra = leer.next();
@@ -15,11 +18,23 @@ public class Ejercicio2AhorcadoServicio {
         int intentos = leer.nextInt();
         return new Ejercicio2Ahorcado(palabra, intentos);
     }
-
+    
+    public void limpiarANT(Ejercicio2Ahorcado p1) {
+        try {
+            Robot pressbot = new Robot();
+            pressbot.keyPress(KeyEvent.VK_CONTROL);
+            pressbot.keyPress(KeyEvent.VK_L);
+            pressbot.keyRelease(KeyEvent.VK_CONTROL);
+            pressbot.keyRelease(KeyEvent.VK_L);
+        } catch (AWTException ex) {
+            System.out.println("" + ex.getMessage());
+        }
+    }
+    
     public void longitud(Ejercicio2Ahorcado p1) {
         System.out.println("La palabra contiene " + p1.getPalabra().length);
     }
-
+    
     public boolean buscar(Ejercicio2Ahorcado p1, char letraIngresada) {
         int cont = 0;
         boolean buscado = false;
@@ -37,7 +52,7 @@ public class Ejercicio2AhorcadoServicio {
         }
         return buscado;
     }
-
+    
     public void encontradas(Ejercicio2Ahorcado p1, char letraIngresada) {
         if (this.buscar(p1, letraIngresada)) {
             int cont = 0;
@@ -53,14 +68,15 @@ public class Ejercicio2AhorcadoServicio {
         }
         System.out.println("Números de letras (encontradas, faltantes): " + p1.getLetras() + "," + (p1.getPalabra().length - p1.getLetras()));
     }
-
+    
     public void intentos(Ejercicio2Ahorcado p1) {
         System.out.println("Cantidad de intentos restantes: " + p1.getIntentos());
     }
-
+    
     public void juego() {
         Ejercicio2Ahorcado p1;
         p1 = this.crearJuego();
+        this.limpiarANT(p1);
         do {
             System.out.println("------------------------------------------------");
             System.out.println(Arrays.toString(p1.getDescubierta()));
@@ -77,4 +93,5 @@ public class Ejercicio2AhorcadoServicio {
         }
         System.out.println("La palabra era " + Arrays.toString(p1.getPalabra()));
     }
+    
 }
