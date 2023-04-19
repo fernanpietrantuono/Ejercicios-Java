@@ -116,4 +116,5 @@ public class Ejercicio2AhorcadoMaxServicio {
         System.out.println("Respuestas correctas: " + correcta);
         System.out.println("Respuestas incorrectas: " + incorrecta);
     }
+
 }
