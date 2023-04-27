@@ -4,11 +4,9 @@ import Entidades.Ejercicio3UnaDeCuatro;
 import com.sun.glass.events.KeyEvent;
 import java.awt.AWTException;
 import java.awt.Robot;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Ejercicio3UnaDeCuatroServicio {
-
     public Scanner leer = new Scanner(System.in).useDelimiter("\n");
 
     public Ejercicio3UnaDeCuatro crearJuego(int n) {
@@ -63,7 +61,7 @@ public class Ejercicio3UnaDeCuatroServicio {
     }
 
     public int mostrarDescripcion(String[] mostrar4, Ejercicio3UnaDeCuatro partida, int n) {
-        int i;
+        int i, indiceDevuelto=-1;
         boolean esta;
         do {
             esta = false;
@@ -71,14 +69,15 @@ public class Ejercicio3UnaDeCuatroServicio {
             for (int j = 0; j < 4; j++) {
                 if (mostrar4[j].equals(partida.getRespuesta()[i])) {
                     esta = true;
+                    indiceDevuelto=j; // agrego esta línea para que el numero que me devuelva sea el indice de mostrar4 y no de la palabra correcta
                 }
             }
         } while (!esta);
         System.out.println("Descripción: " + partida.getCadenaDescripcion()[i]);
-        return i;
+        return indiceDevuelto;
     }
 
-    public void reemplazarRespuesta(String[] mostrar4, Ejercicio3UnaDeCuatro partida, int indice) {
+    public void reemplazarRespuesta(String[] mostrar4, Ejercicio3UnaDeCuatro partida, int i) {
         boolean encontrado;
         do {
             encontrado = false;
@@ -89,7 +88,7 @@ public class Ejercicio3UnaDeCuatroServicio {
                 }
             }
             if (!encontrado) {
-                mostrar4[indice] = partida.getRespuesta()[j];
+                mostrar4[i] = partida.getRespuesta()[j]; 
             }
         } while (encontrado);
     }
@@ -100,20 +99,22 @@ public class Ejercicio3UnaDeCuatroServicio {
         this.limpiarANT(partida);
         int correctas = 0;
         String[] mostrar4 = new String[4];
-        this.mostrar4Opciones(mostrar4, partida, n);
-        for (int i = 0; i < n; i++) {
+        this.mostrar4Opciones(mostrar4, partida, n); 
+        for (int i = 0; i < n; i++) { // ver la cantidad de oportunidades, acá es la misma que la cantidad de palabras ingresadas
             this.imprimirOpciones(mostrar4);
             int indice = this.mostrarDescripcion(mostrar4, partida, n);
             System.out.println("Ingrese su opción");
             partida.setOpc(leer.nextInt());
-            if ((Arrays.asList(partida.getRespuesta()).indexOf(mostrar4[partida.getOpc() - 1])) == indice) {
+          //  if ((Arrays.asList(partida.getRespuesta()).indexOf(mostrar4[partida.getOpc() - 1])) == indice) {
+            if ((partida.getOpc() - 1) == indice) { // comparo solamente los indices
                 System.out.println("Correcto");
                 correctas++;
             } else {
-                System.out.println("Incorrecto. La respuesta correcta era: " + partida.getRespuesta()[i]);
+                System.out.println("Incorrecto. La respuesta correcta era: " + mostrar4[indice]); //cambié getPartida por mostrar4
             }
-            this.reemplazarRespuesta(mostrar4, partida, indice);
+            this.reemplazarRespuesta(mostrar4, partida, indice); // cambié i por indice
         }
         System.out.println("Obtuviste " + correctas + " respuestas correctas");
     }
+    
 }
