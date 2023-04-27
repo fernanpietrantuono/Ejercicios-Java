@@ -3,9 +3,8 @@ package pooconcolecciones;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Map;
 
-public class PrácticaColecciones {
+public class PrácticaColecciones1 {
 
     public static void main(String[] args) {
         ArrayList<Integer> cantidadAlumnos = new ArrayList();
