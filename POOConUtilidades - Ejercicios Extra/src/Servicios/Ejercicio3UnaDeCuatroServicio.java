@@ -53,7 +53,12 @@ public class Ejercicio3UnaDeCuatroServicio {
         }
         for (int i = 0; i < 4; i++) {
             mostrar4[i] = partida.getRespuesta()[numeros[i]];
-            System.out.println((i + 1) + ". " + partida.getRespuesta()[numeros[i]]);
+        }
+    }
+
+    public void imprimirOpciones(String[] mostrar4) {
+        for (int i = 0; i < mostrar4.length; i++) {
+            System.out.println((i + 1) + ". " + mostrar4[i]);
         }
     }
 
@@ -73,14 +78,31 @@ public class Ejercicio3UnaDeCuatroServicio {
         return i;
     }
 
+    public void reemplazarRespuesta(String[] mostrar4, Ejercicio3UnaDeCuatro partida, int indice) {
+        boolean encontrado;
+        do {
+            encontrado = false;
+            int j = (int) (Math.random() * partida.getRespuesta().length);
+            for (int k = 0; k < 4; k++) {
+                if (mostrar4[k].equals(partida.getRespuesta()[j])) {
+                    encontrado = true;
+                }
+            }
+            if (!encontrado) {
+                mostrar4[indice] = partida.getRespuesta()[j];
+            }
+        } while (encontrado);
+    }
+
     public void juego(int n) {
         Ejercicio3UnaDeCuatro partida;
         partida = this.crearJuego(n);
         this.limpiarANT(partida);
         int correctas = 0;
         String[] mostrar4 = new String[4];
+        this.mostrar4Opciones(mostrar4, partida, n);
         for (int i = 0; i < n; i++) {
-            this.mostrar4Opciones(mostrar4, partida, n);
+            this.imprimirOpciones(mostrar4);
             int indice = this.mostrarDescripcion(mostrar4, partida, n);
             System.out.println("Ingrese su opción");
             partida.setOpc(leer.nextInt());
@@ -90,6 +112,7 @@ public class Ejercicio3UnaDeCuatroServicio {
             } else {
                 System.out.println("Incorrecto. La respuesta correcta era: " + partida.getRespuesta()[i]);
             }
+            this.reemplazarRespuesta(mostrar4, partida, indice);
         }
         System.out.println("Obtuviste " + correctas + " respuestas correctas");
     }
