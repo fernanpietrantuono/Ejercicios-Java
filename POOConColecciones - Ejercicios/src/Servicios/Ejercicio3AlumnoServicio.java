@@ -1,6 +1,7 @@
 package Servicios;
 
 import Entidades.Ejercicio3Alumno;
+import java.text.Collator;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
@@ -11,7 +12,8 @@ public class Ejercicio3AlumnoServicio {
     private Scanner leer = new Scanner(System.in).useDelimiter("\n");
 
     public void cargarAlumnos() {
-        ArrayList<Integer> notas = new ArrayList();
+        Collator comparador = Collator.getInstance();
+        comparador.setStrength(Collator.PRIMARY);
         String resp = "";
         int i = 0;
         do {
@@ -25,19 +27,20 @@ public class Ejercicio3AlumnoServicio {
             System.out.println("¿Quiere seguir agregando alumnos/as?");
             resp = leer.next();
             i++;
-        } while (!"n".equals(resp));
+        } while (!"n".equalsIgnoreCase(resp));
+    }
 
+    public double notaFinal(ArrayList <Integer> notas) {
+        int suma = 0;
+        for (int num : notas) {
+            suma += num;
+        }
+        double promedio = suma / 3;
+        return promedio;
     }
-    
-    public void notaFinal() {
-        String resp = "";
-        do {
-            int longitud = estudiante.size();
-                        System.out.println("Ingrese una raza introducida en la lista a buscar");
-            String buscar = leer.next();
-            for (Ejercicio3Alumno ejercicio3Alumno : estudiante) {
-                
-            }
-        } while (!"n".equals(resp) || estudiante.isEmpty());
+
+    public ArrayList<Ejercicio3Alumno> lista() {
+        return estudiante;
     }
+
 }

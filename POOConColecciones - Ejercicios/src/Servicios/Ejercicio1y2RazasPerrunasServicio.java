@@ -19,7 +19,7 @@ public class Ejercicio1y2RazasPerrunasServicio {
             System.out.println("¿Quiere seguir agregando razas de perros?");
             resp = leer.next();
             i++;
-        } while (!"n".equals(resp));
+        } while (!"n".equalsIgnoreCase(resp));
         this.mostrarRazas();
     }
 
@@ -51,7 +51,7 @@ public class Ejercicio1y2RazasPerrunasServicio {
             this.mostrarRazas();
             System.out.println("¿Quiere seguir buscando razas de perros?");
             resp = leer.next();
-        } while (!"n".equals(resp) || listaRaza.isEmpty());
+        } while (!"n".equalsIgnoreCase(resp) || listaRaza.isEmpty());
     }
 
     @Override
