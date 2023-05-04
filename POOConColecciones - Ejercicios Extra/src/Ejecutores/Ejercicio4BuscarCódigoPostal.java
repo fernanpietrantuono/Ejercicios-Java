@@ -1,13 +1,13 @@
 package Ejecutores;
 
-import Servicios.Ejercicio4CodigoPostalServicio;
+import Servicios.Ejercicio4CódigoPostalServicio;
 import java.util.HashMap;
 
-public class Ejercicio4BuscarCodigoPostal {
+public class Ejercicio4BuscarCódigoPostal {
 
     public static void main(String[] args) {
         HashMap<Integer, String> cp = new HashMap();
-        Ejercicio4CodigoPostalServicio service = new Ejercicio4CodigoPostalServicio();
+        Ejercicio4CódigoPostalServicio service = new Ejercicio4CódigoPostalServicio();
         for (int i = 0; i < 10; i++) {
             service.añadirLocalidad(cp);
         }

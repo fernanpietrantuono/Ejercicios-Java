@@ -3,7 +3,7 @@ package Servicios;
 import java.util.HashMap;
 import java.util.Scanner;
 
-public class Ejercicio4CodigoPostalServicio {
+public class Ejercicio4CódigoPostalServicio {
 
     private Scanner leer = new Scanner(System.in).useDelimiter("\n");
 

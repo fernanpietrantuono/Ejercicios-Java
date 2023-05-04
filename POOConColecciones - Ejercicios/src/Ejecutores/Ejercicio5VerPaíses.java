@@ -1,11 +1,11 @@
 package Ejecutores;
 
-import Servicios.Ejercicio5PaisesServicio;
+import Servicios.Ejercicio5PaísesServicio;
 
-public class Ejercicio5VerPaises {
+public class Ejercicio5VerPaíses {
 
     public static void main(String[] args) {
-        Ejercicio5PaisesServicio ps = new Ejercicio5PaisesServicio();
+        Ejercicio5PaísesServicio ps = new Ejercicio5PaísesServicio();
         ps.cargarpais();
         ps.ordenarpais();
         ps.eliminarpais();

@@ -6,7 +6,7 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Scanner;
 
-public class Ejercicio5PaisesServicio {
+public class Ejercicio5PaísesServicio {
 
     private HashSet<String> Pais = new HashSet();
     private Scanner leer = new Scanner(System.in).useDelimiter("\n");
