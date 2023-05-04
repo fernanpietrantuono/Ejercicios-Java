@@ -39,4 +39,5 @@ public class Ejercicio4CódigoPostalServicio {
             System.out.println("El código ingresado no está en la lista");
         }
     }
+
 }
