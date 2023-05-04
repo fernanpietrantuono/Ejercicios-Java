@@ -32,9 +32,7 @@ public class Ejercicio3AlumnoServicio {
 
     public double notaFinal(ArrayList <Integer> notas) {
         int suma = 0;
-        for (int num : notas) {
-            suma += num;
-        }
+        suma = notas.stream().map((num) -> num).reduce(suma, Integer::sum);
         double promedio = suma / 3;
         return promedio;
     }
