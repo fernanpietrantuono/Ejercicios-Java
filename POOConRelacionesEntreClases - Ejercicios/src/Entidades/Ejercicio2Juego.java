@@ -29,6 +29,7 @@ public class Ejercicio2Juego {
     public void ronda() {
         System.out.println("Iniciando la ronda");
         for (Ejercicio2Jugador jugadore : jugadores) {
+            System.out.println(r);
             if (jugadore.disparo(r)) {
                 System.out.println("Ronda terminada.\nEl/la jugador/a mojado/a es " + jugadore.getNombre() + " - " + jugadore.getID());
                 break;
