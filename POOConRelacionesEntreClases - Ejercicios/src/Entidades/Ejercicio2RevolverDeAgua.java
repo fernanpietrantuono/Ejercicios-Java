@@ -37,8 +37,8 @@ public class Ejercicio2RevolverDeAgua {
     }
 
     public void llenarRevolver() {
-        this.posActual = (int) (Math.random() * 8 + 1);
-        this.posAgua = (int) (Math.random() * 8 + 1);
+        this.posActual = (int) (Math.random() * 6 + 1);
+        this.posAgua = (int) (Math.random() * 6 + 1);
     }
 
     public boolean mojar() {
@@ -46,13 +46,11 @@ public class Ejercicio2RevolverDeAgua {
     }
 
     public void siguienteChorro() {
-        int posicion = this.posActual;
-        if (posicion >= 8) {
-            posicion = 1;
+        if (this.posActual == 6) {
+            this.posActual = 1;
         } else {
-            posicion++;
+            this.posActual++;
         }
-        this.posActual = posicion;
     }
 
 }

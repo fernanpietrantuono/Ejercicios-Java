@@ -45,16 +45,15 @@ public class Ejercicio2Jugador {
     }
 
     public boolean disparo(Ejercicio2RevolverDeAgua r) {
-        boolean chance = true;
         r.mojar();
         r.siguienteChorro();
-        if (mojado) {
-            mojado = false;
-            chance = true;
+        if (r.mojar()) {
+            return mojado = true;
         } else {
-            chance = false;
+            mojado = false;
+            r.siguienteChorro();
+            return mojado;
         }
-        return chance;
     }
 
 }
