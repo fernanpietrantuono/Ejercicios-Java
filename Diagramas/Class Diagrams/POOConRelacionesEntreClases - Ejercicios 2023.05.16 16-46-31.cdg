@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="POOConRelacionesEntreClases - Ejercicios">
+  <ClassDiagramComponents>
+    <Class name="Ejercicio1CrearPersonasYPerros" package="Ejecutores" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Ejercicio2RuletaRusaDeAgua" package="Ejecutores" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Ejercicio3IniciarPartida" package="Ejecutores" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Ejercicio1Perro" package="Entidades" visibility="public" xPosition="620.0" yPosition="160.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="raza" type="String" visibility="private"/>
+        <Field name="edad" type="Integer" visibility="private"/>
+        <Field name="tamano" type="String" visibility="private"/>
+        <Field name="adoptado" type="Boolean" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="raza"/>
+          <Argument type="Integer" name="edad"/>
+          <Argument type="String" name="tamano"/>
+          <Argument type="Boolean" name="adoptado"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getRaza" returnType="String" visibility="public"/>
+        <Method name="setRaza" returnType="void" visibility="public">
+          <Argument type="String" name="raza"/>
+        </Method>
+        <Method name="getEdad" returnType="Integer" visibility="public"/>
+        <Method name="setEdad" returnType="void" visibility="public">
+          <Argument type="Integer" name="edad"/>
+        </Method>
+        <Method name="getTamano" returnType="String" visibility="public"/>
+        <Method name="setTamano" returnType="void" visibility="public">
+          <Argument type="String" name="tamano"/>
+        </Method>
+        <Method name="getAdoptado" returnType="Boolean" visibility="public"/>
+        <Method name="setAdoptado" returnType="void" visibility="public">
+          <Argument type="Boolean" name="adoptado"/>
+        </Method>
+        <Method name="hashCode" returnType="int" visibility="public"/>
+        <Method name="equals" returnType="boolean" visibility="public">
+          <Argument type="Object" name="obj"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Ejercicio1Persona" package="Entidades" visibility="public" xPosition="1295.0" yPosition="160.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="apellido" type="String" visibility="private"/>
+        <Field name="edad" type="Integer" visibility="private"/>
+        <Field name="DNI" type="Long" visibility="private"/>
+        <Field name="mascota" type="Ejercicio1Perro" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="apellido"/>
+          <Argument type="Integer" name="edad"/>
+          <Argument type="Long" name="DNI"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="hashCode" returnType="int" visibility="public"/>
+        <Method name="equals" returnType="boolean" visibility="public">
+          <Argument type="Object" name="obj"/>
+        </Method>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getApellido" returnType="String" visibility="public"/>
+        <Method name="setApellido" returnType="void" visibility="public">
+          <Argument type="String" name="apellido"/>
+        </Method>
+        <Method name="getEdad" returnType="Integer" visibility="public"/>
+        <Method name="setEdad" returnType="void" visibility="public">
+          <Argument type="Integer" name="edad"/>
+        </Method>
+        <Method name="getDNI" returnType="Long" visibility="public"/>
+        <Method name="setDNI" returnType="void" visibility="public">
+          <Argument type="Long" name="DNI"/>
+        </Method>
+        <Method name="getMascota" returnType="Ejercicio1Perro" visibility="public"/>
+        <Method name="setMascota" returnType="void" visibility="public">
+          <Argument type="Ejercicio1Perro" name="mascota"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Ejercicio2Juego" package="Entidades" visibility="public" xPosition="2162.0" yPosition="20.0">
+      <Fields>
+        <Field name="jugadores" type="ArrayList&lt;Ejercicio2Jugador&gt;" visibility="private"/>
+        <Field name="r" type="Ejercicio2RevolverDeAgua" visibility="private"/>
+        <Field name="leer" type="Scanner" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="llenarJuego" returnType="void" visibility="public"/>
+        <Method name="ronda" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Ejercicio2Jugador" package="Entidades" visibility="public" xPosition="1867.0" yPosition="312.0">
+      <Fields>
+        <Field name="ID" type="Integer" visibility="private"/>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="mojado" type="Boolean" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="Integer" name="ID"/>
+          <Argument type="String" name="nombre"/>
+          <Argument type="Boolean" name="mojado"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getID" returnType="Integer" visibility="public"/>
+        <Method name="setID" returnType="void" visibility="public">
+          <Argument type="Integer" name="ID"/>
+        </Method>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getMojado" returnType="Boolean" visibility="public"/>
+        <Method name="setMojado" returnType="void" visibility="public">
+          <Argument type="Boolean" name="mojado"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="disparo" returnType="boolean" visibility="public">
+          <Argument type="Ejercicio2RevolverDeAgua" name="r"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Ejercicio2RevolverDeAgua" package="Entidades" visibility="public" xPosition="2324.0" yPosition="322.0">
+      <Fields>
+        <Field name="posActual" type="Integer" visibility="private"/>
+        <Field name="posAgua" type="Integer" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="Integer" name="posActual"/>
+          <Argument type="Integer" name="posAgua"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getPosActual" returnType="Integer" visibility="public"/>
+        <Method name="setPosActual" returnType="void" visibility="public">
+          <Argument type="Integer" name="posActual"/>
+        </Method>
+        <Method name="getPosAgua" returnType="Integer" visibility="public"/>
+        <Method name="setPosAgua" returnType="void" visibility="public">
+          <Argument type="Integer" name="posAgua"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="llenarRevolver" returnType="void" visibility="public"/>
+        <Method name="mojar" returnType="boolean" visibility="public"/>
+        <Method name="siguienteChorro" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Ejercicio3Baraja" package="Entidades" visibility="public" xPosition="20.0" yPosition="160.0">
+      <Fields>
+        <Field name="baraja" type="ArrayList&lt;Ejercicio3Carta&gt;" visibility="private"/>
+        <Field name="leer" type="Scanner" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="ArrayList&lt;Ejercicio3Carta&gt;" name="c"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getBaraja" returnType="ArrayList&lt;Ejercicio3Carta&gt;" visibility="public"/>
+        <Method name="setBaraja" returnType="void" visibility="public">
+          <Argument type="ArrayList&lt;Ejercicio3Carta&gt;" name="baraja"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="barajar" returnType="void" visibility="public"/>
+        <Method name="siguenteCarta" returnType="Ejercicio3Carta" visibility="public"/>
+        <Method name="cartasDisponibles" returnType="void" visibility="public"/>
+        <Method name="darCartas" returnType="ArrayList&lt;Ejercicio3Carta&gt;" visibility="public">
+          <Argument type="ArrayList&lt;Ejercicio3Carta&gt;" name="cartasRepartidas"/>
+        </Method>
+        <Method name="cartasMonton" returnType="void" visibility="public">
+          <Argument type="ArrayList&lt;Ejercicio3Carta&gt;" name="cartasRepartidas"/>
+        </Method>
+        <Method name="mostrarBaraja" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Ejercicio3Carta" package="Entidades" visibility="public" xPosition="127.0" yPosition="547.0">
+      <Fields>
+        <Field name="numero" type="Integer" visibility="private"/>
+        <Field name="palo" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="Integer" name="numero"/>
+          <Argument type="String" name="palo"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNumero" returnType="Integer" visibility="public"/>
+        <Method name="setNumero" returnType="void" visibility="public">
+          <Argument type="Integer" name="numero"/>
+        </Method>
+        <Method name="getPalo" returnType="String" visibility="public"/>
+        <Method name="setPalo" returnType="void" visibility="public">
+          <Argument type="String" name="palo"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="r" source="Entidades.Ejercicio2Juego" target="Entidades.Ejercicio2RevolverDeAgua" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Entidades.Ejercicio1Persona" target="Entidades.Ejercicio1Perro" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Entidades.Ejercicio2Jugador" target="Entidades.Ejercicio2RevolverDeAgua" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="mascota" source="Entidades.Ejercicio1Persona" target="Entidades.Ejercicio1Perro" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Entidades.Ejercicio3Baraja" target="Entidades.Ejercicio3Carta" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="baraja" source="Entidades.Ejercicio3Baraja" target="Entidades.Ejercicio3Carta" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Ejercicio3Carta&gt;"/>
+    <HasRelation name="jugadores" source="Entidades.Ejercicio2Juego" target="Entidades.Ejercicio2Jugador" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Ejercicio2Jugador&gt;"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

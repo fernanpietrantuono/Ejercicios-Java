@@ -1,5 +1,7 @@
 package Entidades;
 
+import java.util.Objects;
+
 public class Ejercicio1Persona {
 
     private String nombre;
@@ -11,14 +13,47 @@ public class Ejercicio1Persona {
     public Ejercicio1Persona() {
     }
 
-    public Ejercicio1Persona(String nombre, String apellido, Integer edad, Long DNI, Ejercicio1Perro mascota) {
+    public Ejercicio1Persona(String nombre, String apellido, Integer edad, Long DNI) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.edad = edad;
         this.DNI = DNI;
-        this.mascota = mascota;
     }
 
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 67 * hash + Objects.hashCode(this.nombre);
+        hash = 67 * hash + Objects.hashCode(this.apellido);
+        hash = 67 * hash + Objects.hashCode(this.edad);
+        hash = 67 * hash + Objects.hashCode(this.DNI);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Ejercicio1Persona other = (Ejercicio1Persona) obj;
+        if (!Objects.equals(this.nombre, other.nombre)) {
+            return false;
+        }
+        if (!Objects.equals(this.apellido, other.apellido)) {
+            return false;
+        }
+        if (!Objects.equals(this.edad, other.edad)) {
+            return false;
+        }
+        return Objects.equals(this.DNI, other.DNI);
+    }
+    
     public String getNombre() {
         return nombre;
     }
