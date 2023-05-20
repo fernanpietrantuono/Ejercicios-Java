@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="POOConRelacionesEntreClases - Ejercicios Extra">
+  <ClassDiagramComponents>
+    <Class name="Ejercicio2CrearSalaDeCine" package="Ejecutores" visibility="public" xPosition="423.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Ejercicio3CrearPoliza" package="Ejecutores" visibility="public" xPosition="2402.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Ejercicio4CrearFacilitadores" package="Ejecutores" visibility="public" xPosition="4835.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Ejercicio2Asiento" package="Entidades" visibility="public" xPosition="23.0" yPosition="1030.0">
+      <Fields>
+        <Field name="espectador" type="Ejercicio2Espectador" visibility="private"/>
+        <Field name="fila" type="int" visibility="private"/>
+        <Field name="columna" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="Ejercicio2Espectador" name="espectador"/>
+          <Argument type="int" name="fila"/>
+          <Argument type="String" name="columna"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getEspectador" returnType="Ejercicio2Espectador" visibility="public"/>
+        <Method name="setEspectador" returnType="void" visibility="public">
+          <Argument type="Ejercicio2Espectador" name="espectador"/>
+        </Method>
+        <Method name="getFila" returnType="int" visibility="public"/>
+        <Method name="setFila" returnType="void" visibility="public">
+          <Argument type="int" name="fila"/>
+        </Method>
+        <Method name="getColumna" returnType="String" visibility="public"/>
+        <Method name="setColumna" returnType="void" visibility="public">
+          <Argument type="String" name="columna"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Ejercicio2Cine" package="Entidades" visibility="public" xPosition="564.0" yPosition="1001.0">
+      <Fields>
+        <Field name="pelicula" type="Ejercicio2Pelicula" visibility="private"/>
+        <Field name="sala" type="Integer" visibility="private"/>
+        <Field name="precio" type="Double" visibility="private"/>
+        <Field name="asientos" type="Ejercicio2Asiento[][]" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="Ejercicio2Pelicula" name="pelicula"/>
+          <Argument type="Integer" name="sala"/>
+          <Argument type="Double" name="precio"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getPelicula" returnType="Ejercicio2Pelicula" visibility="public"/>
+        <Method name="setPelicula" returnType="void" visibility="public">
+          <Argument type="Ejercicio2Pelicula" name="pelicula"/>
+        </Method>
+        <Method name="getSala" returnType="Integer" visibility="public"/>
+        <Method name="setSala" returnType="void" visibility="public">
+          <Argument type="Integer" name="sala"/>
+        </Method>
+        <Method name="getPrecio" returnType="Double" visibility="public"/>
+        <Method name="setPrecio" returnType="void" visibility="public">
+          <Argument type="Double" name="precio"/>
+        </Method>
+        <Method name="getAsientos" returnType="Ejercicio2Asiento[][]" visibility="public"/>
+        <Method name="setAsientos" returnType="void" visibility="public">
+          <Argument type="Ejercicio2Asiento[][]" name="asientos"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Ejercicio2Espectador" package="Entidades" visibility="public" xPosition="48.0" yPosition="198.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="edad" type="Integer" visibility="private"/>
+        <Field name="dinero" type="Double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="Integer" name="edad"/>
+          <Argument type="Double" name="dinero"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getEdad" returnType="Integer" visibility="public"/>
+        <Method name="setEdad" returnType="void" visibility="public">
+          <Argument type="Integer" name="edad"/>
+        </Method>
+        <Method name="getDinero" returnType="Double" visibility="public"/>
+        <Method name="setDinero" returnType="void" visibility="public">
+          <Argument type="Double" name="dinero"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Ejercicio2Pelicula" package="Entidades" visibility="public" xPosition="519.0" yPosition="198.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="duracion" type="Integer" visibility="private"/>
+        <Field name="edadMinima" type="Integer" visibility="private"/>
+        <Field name="director" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="Integer" name="duracion"/>
+          <Argument type="Integer" name="edadMinima"/>
+          <Argument type="String" name="director"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getDuracion" returnType="Integer" visibility="public"/>
+        <Method name="setDuracion" returnType="void" visibility="public">
+          <Argument type="Integer" name="duracion"/>
+        </Method>
+        <Method name="getEdadMinima" returnType="Integer" visibility="public"/>
+        <Method name="setEdadMinima" returnType="void" visibility="public">
+          <Argument type="Integer" name="edadMinima"/>
+        </Method>
+        <Method name="getDirector" returnType="String" visibility="public"/>
+        <Method name="setDirector" returnType="void" visibility="public">
+          <Argument type="String" name="director"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Ejercicio3Clientes" package="Entidades" visibility="public" xPosition="2087.0" yPosition="1207.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="dni" type="long" visibility="private"/>
+        <Field name="polizaCliente" type="ArrayList&lt;Ejercicio3Polizas&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="apellido"/>
+          <Argument type="String" name="mail"/>
+          <Argument type="String" name="domicilio"/>
+          <Argument type="long" name="dni"/>
+          <Argument type="long" name="telefono"/>
+          <Argument type="ArrayList&lt;Ejercicio3Polizas&gt;" name="polizaCliente"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getApellido" returnType="String" visibility="public"/>
+        <Method name="setApellido" returnType="void" visibility="public">
+          <Argument type="String" name="apellido"/>
+        </Method>
+        <Method name="getMail" returnType="String" visibility="public"/>
+        <Method name="setMail" returnType="void" visibility="public">
+          <Argument type="String" name="mail"/>
+        </Method>
+        <Method name="getDomicilio" returnType="String" visibility="public"/>
+        <Method name="setDomicilio" returnType="void" visibility="public">
+          <Argument type="String" name="domicilio"/>
+        </Method>
+        <Method name="getDni" returnType="long" visibility="public"/>
+        <Method name="setDni" returnType="void" visibility="public">
+          <Argument type="long" name="dni"/>
+        </Method>
+        <Method name="getTelefono" returnType="long" visibility="public"/>
+        <Method name="setTelefono" returnType="void" visibility="public">
+          <Argument type="long" name="telefono"/>
+        </Method>
+        <Method name="getPolizaCliente" returnType="ArrayList&lt;Ejercicio3Polizas&gt;" visibility="public"/>
+        <Method name="setPolizaCliente" returnType="void" visibility="public">
+          <Argument type="ArrayList&lt;Ejercicio3Polizas&gt;" name="polizaCliente"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Ejercicio3Cuotas" package="Entidades" visibility="public" xPosition="3533.0" yPosition="874.0">
+      <Fields>
+        <Field name="numCuota" type="int" visibility="private"/>
+        <Field name="montoTotalCuota" type="double" visibility="private"/>
+        <Field name="pagada" type="boolean" visibility="private"/>
+        <Field name="vencimiento" type="LocalDate" visibility="private"/>
+        <Field name="formaDePago" type="Ejercicio3FormaDePago" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="int" name="numCuota"/>
+          <Argument type="double" name="montoTotalCuota"/>
+          <Argument type="LocalDate" name="vencimiento"/>
+          <Argument type="Ejercicio3FormaDePago" name="formaDePago"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNumCuota" returnType="int" visibility="public"/>
+        <Method name="setNumCuota" returnType="void" visibility="public">
+          <Argument type="int" name="numCuota"/>
+        </Method>
+        <Method name="getMontoTotalCuota" returnType="double" visibility="public"/>
+        <Method name="setMontoTotalCuota" returnType="void" visibility="public">
+          <Argument type="double" name="montoTotalCuota"/>
+        </Method>
+        <Method name="isPagada" returnType="boolean" visibility="public"/>
+        <Method name="setPagada" returnType="void" visibility="public">
+          <Argument type="boolean" name="pagada"/>
+        </Method>
+        <Method name="getVencimiento" returnType="LocalDate" visibility="public"/>
+        <Method name="setVencimiento" returnType="void" visibility="public">
+          <Argument type="LocalDate" name="vencimiento"/>
+        </Method>
+        <Method name="getFormaDePago" returnType="Ejercicio3FormaDePago" visibility="public"/>
+        <Method name="setFormaDePago" returnType="void" visibility="public">
+          <Argument type="Ejercicio3FormaDePago" name="formaDePago"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Ejercicio3Polizas" package="Entidades" visibility="public" xPosition="1681.0" yPosition="198.0">
+      <Fields>
+        <Field name="numPoliza" type="int" visibility="private"/>
+        <Field name="inicioPoliza" type="Date" visibility="private"/>
+        <Field name="formaDePago" type="Ejercicio3FormaDePago" visibility="private"/>
+        <Field name="granizo" type="boolean" visibility="private"/>
+        <Field name="montoMaxGranizo" type="double" visibility="private"/>
+        <Field name="cobertura" type="Ejercicio3Cobertura" visibility="private"/>
+        <Field name="vehiculo" type="Ejercicio3Vehiculos" visibility="private"/>
+        <Field name="cuotas" type="ArrayList&lt;Ejercicio3Cuotas&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="int" name="numPoliza"/>
+          <Argument type="int" name="cantCuotas"/>
+          <Argument type="Date" name="inicioPoliza"/>
+          <Argument type="Date" name="finPoliza"/>
+          <Argument type="Ejercicio3FormaDePago" name="formaDePago"/>
+          <Argument type="boolean" name="granizo"/>
+          <Argument type="double" name="montoMaxGranizo"/>
+          <Argument type="double" name="montoTotalAsegurado"/>
+          <Argument type="Ejercicio3Cobertura" name="cobertura"/>
+          <Argument type="Ejercicio3Vehiculos" name="vehiculo"/>
+          <Argument type="ArrayList&lt;Ejercicio3Cuotas&gt;" name="cuotas"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNumPoliza" returnType="int" visibility="public"/>
+        <Method name="setNumPoliza" returnType="void" visibility="public">
+          <Argument type="int" name="numPoliza"/>
+        </Method>
+        <Method name="getCantCuotas" returnType="int" visibility="public"/>
+        <Method name="setCantCuotas" returnType="void" visibility="public">
+          <Argument type="int" name="cantCuotas"/>
+        </Method>
+        <Method name="getInicioPoliza" returnType="Date" visibility="public"/>
+        <Method name="setInicioPoliza" returnType="void" visibility="public">
+          <Argument type="Date" name="inicioPoliza"/>
+        </Method>
+        <Method name="getFinPoliza" returnType="Date" visibility="public"/>
+        <Method name="setFinPoliza" returnType="void" visibility="public">
+          <Argument type="Date" name="finPoliza"/>
+        </Method>
+        <Method name="getFormaDePago" returnType="Ejercicio3FormaDePago" visibility="public"/>
+        <Method name="setFormaDePago" returnType="void" visibility="public">
+          <Argument type="Ejercicio3FormaDePago" name="formaDePago"/>
+        </Method>
+        <Method name="isGranizo" returnType="boolean" visibility="public"/>
+        <Method name="setGranizo" returnType="void" visibility="public">
+          <Argument type="boolean" name="granizo"/>
+        </Method>
+        <Method name="getMontoMaxGranizo" returnType="double" visibility="public"/>
+        <Method name="setMontoMaxGranizo" returnType="void" visibility="public">
+          <Argument type="double" name="montoMaxGranizo"/>
+        </Method>
+        <Method name="getMontoTotalAsegurado" returnType="double" visibility="public"/>
+        <Method name="setMontoTotalAsegurado" returnType="void" visibility="public">
+          <Argument type="double" name="montoTotalAsegurado"/>
+        </Method>
+        <Method name="getCobertura" returnType="Ejercicio3Cobertura" visibility="public"/>
+        <Method name="setCobertura" returnType="void" visibility="public">
+          <Argument type="Ejercicio3Cobertura" name="cobertura"/>
+        </Method>
+        <Method name="getVehiculo" returnType="Ejercicio3Vehiculos" visibility="public"/>
+        <Method name="setVehiculo" returnType="void" visibility="public">
+          <Argument type="Ejercicio3Vehiculos" name="vehiculo"/>
+        </Method>
+        <Method name="getCuotas" returnType="ArrayList&lt;Ejercicio3Cuotas&gt;" visibility="public"/>
+        <Method name="setCuotas" returnType="void" visibility="public">
+          <Argument type="ArrayList&lt;Ejercicio3Cuotas&gt;" name="cuotas"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Ejercicio3Vehiculos" package="Entidades" visibility="public" xPosition="1149.0" yPosition="1670.0">
+      <Fields>
+        <Field name="marca" type="String" visibility="private"/>
+        <Field name="anio" type="int" visibility="private"/>
+        <Field name="tipo" type="Ejercicio3TipoDeVehiculo" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="marca"/>
+          <Argument type="String" name="modelo"/>
+          <Argument type="String" name="patente"/>
+          <Argument type="String" name="numMotor"/>
+          <Argument type="String" name="numChasis"/>
+          <Argument type="String" name="color"/>
+          <Argument type="int" name="anio"/>
+          <Argument type="Ejercicio3TipoDeVehiculo" name="tipo"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getMarca" returnType="String" visibility="public"/>
+        <Method name="setMarca" returnType="void" visibility="public">
+          <Argument type="String" name="marca"/>
+        </Method>
+        <Method name="getModelo" returnType="String" visibility="public"/>
+        <Method name="setModelo" returnType="void" visibility="public">
+          <Argument type="String" name="modelo"/>
+        </Method>
+        <Method name="getPatente" returnType="String" visibility="public"/>
+        <Method name="setPatente" returnType="void" visibility="public">
+          <Argument type="String" name="patente"/>
+        </Method>
+        <Method name="getNumMotor" returnType="String" visibility="public"/>
+        <Method name="setNumMotor" returnType="void" visibility="public">
+          <Argument type="String" name="numMotor"/>
+        </Method>
+        <Method name="getNumChasis" returnType="String" visibility="public"/>
+        <Method name="setNumChasis" returnType="void" visibility="public">
+          <Argument type="String" name="numChasis"/>
+        </Method>
+        <Method name="getColor" returnType="String" visibility="public"/>
+        <Method name="setColor" returnType="void" visibility="public">
+          <Argument type="String" name="color"/>
+        </Method>
+        <Method name="getAnio" returnType="int" visibility="public"/>
+        <Method name="setAnio" returnType="void" visibility="public">
+          <Argument type="int" name="anio"/>
+        </Method>
+        <Method name="getTipo" returnType="Ejercicio3TipoDeVehiculo" visibility="public"/>
+        <Method name="setTipo" returnType="void" visibility="public">
+          <Argument type="Ejercicio3TipoDeVehiculo" name="tipo"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Ejercicio4Alumno" package="Entidades" visibility="public" xPosition="4941.0" yPosition="198.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="cantVotos" type="Integer" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="DNI"/>
+          <Argument type="Integer" name="cantVotos"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getDNI" returnType="String" visibility="public"/>
+        <Method name="setDNI" returnType="void" visibility="public">
+          <Argument type="String" name="DNI"/>
+        </Method>
+        <Method name="getCantVotos" returnType="Integer" visibility="public"/>
+        <Method name="setCantVotos" returnType="void" visibility="public">
+          <Argument type="Integer" name="cantVotos"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Ejercicio4CompararAlumnos" package="Entidades" visibility="public" xPosition="4497.0" yPosition="279.0">
+      <Fields>
+        <Field name="ordenarPorVotos" type="Comparator&lt;Ejercicio4Alumno&gt;" visibility="public" isStatic="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Ejercicio4Voto" package="Entidades" visibility="public" xPosition="4757.0" yPosition="766.0">
+      <Fields>
+        <Field name="alumnoVotador" type="Ejercicio4Alumno" visibility="private"/>
+        <Field name="alumnosVotados" type="ArrayList&lt;Ejercicio4Alumno&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="Ejercicio4Alumno" name="alumnoVotador"/>
+          <Argument type="ArrayList&lt;Ejercicio4Alumno&gt;" name="alumnosVotados"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getAlumnoVotador" returnType="Ejercicio4Alumno" visibility="public"/>
+        <Method name="setAlumnoVotador" returnType="void" visibility="public">
+          <Argument type="Ejercicio4Alumno" name="alumnoVotador"/>
+        </Method>
+        <Method name="getAlumnosVotados" returnType="ArrayList&lt;Ejercicio4Alumno&gt;" visibility="public"/>
+        <Method name="setAlumnosVotados" returnType="void" visibility="public">
+          <Argument type="ArrayList&lt;Ejercicio4Alumno&gt;" name="alumnosVotados"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Ejercicio2CineServicio" package="Servicios" visibility="public" xPosition="371.0" yPosition="658.0">
+      <Fields>
+        <Field name="leer" type="Scanner" visibility="private"/>
+        <Field name="lista" type="ArrayList&lt;Ejercicio2Espectador&gt;" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="crearPelicula" returnType="Ejercicio2Pelicula" visibility="public"/>
+        <Method name="abrirCine" returnType="Ejercicio2Cine" visibility="public">
+          <Argument type="Ejercicio2Pelicula" name="peli"/>
+        </Method>
+        <Method name="crearEspectadores" returnType="void" visibility="public"/>
+        <Method name="asignarAsientos" returnType="void" visibility="public">
+          <Argument type="Ejercicio2Cine" name="cine"/>
+        </Method>
+        <Method name="mostrarSala" returnType="void" visibility="public">
+          <Argument type="Ejercicio2Cine" name="cine"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Ejercicio3SeguroServicio" package="Servicios" visibility="public" xPosition="3264.0" yPosition="1592.0">
+      <Fields>
+        <Field name="leer" type="Scanner" visibility="private"/>
+        <Field name="cliente" type="Ejercicio3Clientes" visibility="private"/>
+        <Field name="poliza" type="Ejercicio3Polizas" visibility="private"/>
+        <Field name="vehiculo" type="Ejercicio3Vehiculos" visibility="private"/>
+        <Field name="polizas" type="ArrayList&lt;Ejercicio3Polizas&gt;" visibility="private"/>
+        <Field name="cuotas" type="ArrayList&lt;Ejercicio3Cuotas&gt;" visibility="private"/>
+        <Field name="pagoFinal" type="double" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="aniadirClientes" returnType="void" visibility="public"/>
+        <Method name="llenarPoliza" returnType="void" visibility="public"/>
+        <Method name="aniadirVehiculos" returnType="void" visibility="public"/>
+        <Method name="pagoEnCuotas" returnType="void" visibility="public"/>
+        <Method name="mostrarDatos" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Ejercicio4Simulador" package="Servicios" visibility="public" xPosition="4497.0" yPosition="490.0">
+      <Fields>
+        <Field name="alumno" type="ArrayList&lt;Ejercicio4Alumno&gt;" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="generarNombreYApellido" returnType="ArrayList" visibility="public"/>
+        <Method name="generarDNI" returnType="ArrayList" visibility="public"/>
+        <Method name="crearAlumno" returnType="ArrayList" visibility="public"/>
+        <Method name="imprimirLista" returnType="void" visibility="public"/>
+        <Method name="votos" returnType="ArrayList" visibility="public">
+          <Argument type="int" name="cont"/>
+        </Method>
+        <Method name="ordenarVotos" returnType="void" visibility="public"/>
+        <Method name="crearFacilitadores" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Enum name="Ejercicio3Cobertura" package="Enumeradores" visibility="public" xPosition="3443.0" yPosition="279.0">
+      <Literals>
+        <Literal name="A"/>
+        <Literal name="B"/>
+        <Literal name="C"/>
+        <Literal name="D"/>
+      </Literals>
+    </Enum>
+    <Enum name="Ejercicio3FormaDePago" package="Enumeradores" visibility="public" xPosition="3797.0" yPosition="490.0">
+      <Literals>
+        <Literal name="EFECTIVO"/>
+        <Literal name="TARJETA_DE_CREDITO"/>
+        <Literal name="TARJETA_DE_DEBITO"/>
+        <Literal name="TRANSFERENCIA"/>
+      </Literals>
+    </Enum>
+    <Enum name="Ejercicio3TipoDeVehiculo" package="Enumeradores" visibility="public" xPosition="2406.0" yPosition="1903.0">
+      <Literals>
+        <Literal name="HATCHBACK"/>
+        <Literal name="SEDAN"/>
+        <Literal name="FAMILIAR"/>
+        <Literal name="MONOVOLUMEN"/>
+        <Literal name="SUV"/>
+        <Literal name="PICK_UP"/>
+        <Literal name="UTILITARIO"/>
+        <Literal name="MOTO"/>
+      </Literals>
+    </Enum>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="Entidades.Ejercicio2Asiento" target="Entidades.Ejercicio2Espectador" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="cuotas" source="Entidades.Ejercicio3Polizas" target="Entidades.Ejercicio3Cuotas" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Ejercicio3Cuotas&gt;"/>
+    <UseRelation source="Entidades.Ejercicio3Polizas" target="Entidades.Ejercicio3Cuotas" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="polizaCliente" source="Entidades.Ejercicio3Clientes" target="Entidades.Ejercicio3Polizas" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Ejercicio3Polizas&gt;"/>
+    <HasRelation name="alumnosVotados" source="Entidades.Ejercicio4Voto" target="Entidades.Ejercicio4Alumno" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Ejercicio4Alumno&gt;"/>
+    <HasRelation name="poliza" source="Servicios.Ejercicio3SeguroServicio" target="Entidades.Ejercicio3Polizas" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Entidades.Ejercicio3Polizas" target="Enumeradores.Ejercicio3Cobertura" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Entidades.Ejercicio3Vehiculos" target="Enumeradores.Ejercicio3TipoDeVehiculo" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Entidades.Ejercicio3Cuotas" target="Enumeradores.Ejercicio3FormaDePago" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="vehiculo" source="Entidades.Ejercicio3Polizas" target="Entidades.Ejercicio3Vehiculos" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="cobertura" source="Entidades.Ejercicio3Polizas" target="Enumeradores.Ejercicio3Cobertura" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Entidades.Ejercicio4Voto" target="Entidades.Ejercicio4Alumno" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Entidades.Ejercicio3Polizas" target="Enumeradores.Ejercicio3FormaDePago" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="alumnoVotador" source="Entidades.Ejercicio4Voto" target="Entidades.Ejercicio4Alumno" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Entidades.Ejercicio2Cine" target="Entidades.Ejercicio2Pelicula" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Entidades.Ejercicio3Clientes" target="Entidades.Ejercicio3Polizas" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Servicios.Ejercicio2CineServicio" target="Entidades.Ejercicio2Pelicula" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="vehiculo" source="Servicios.Ejercicio3SeguroServicio" target="Entidades.Ejercicio3Vehiculos" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="ordenarPorVotos" source="Entidades.Ejercicio4CompararAlumnos" target="Entidades.Ejercicio4Alumno" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="lista" source="Servicios.Ejercicio2CineServicio" target="Entidades.Ejercicio2Espectador" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Ejercicio2Espectador&gt;"/>
+    <HasRelation name="espectador" source="Entidades.Ejercicio2Asiento" target="Entidades.Ejercicio2Espectador" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Entidades.Ejercicio3Polizas" target="Entidades.Ejercicio3Vehiculos" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="cuotas" source="Servicios.Ejercicio3SeguroServicio" target="Entidades.Ejercicio3Cuotas" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Ejercicio3Cuotas&gt;"/>
+    <UseRelation source="Servicios.Ejercicio2CineServicio" target="Entidades.Ejercicio2Cine" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Entidades.Ejercicio2Cine" target="Entidades.Ejercicio2Asiento" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="pelicula" source="Entidades.Ejercicio2Cine" target="Entidades.Ejercicio2Pelicula" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="formaDePago" source="Entidades.Ejercicio3Cuotas" target="Enumeradores.Ejercicio3FormaDePago" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="alumno" source="Servicios.Ejercicio4Simulador" target="Entidades.Ejercicio4Alumno" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Ejercicio4Alumno&gt;"/>
+    <HasRelation name="formaDePago" source="Entidades.Ejercicio3Polizas" target="Enumeradores.Ejercicio3FormaDePago" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="cliente" source="Servicios.Ejercicio3SeguroServicio" target="Entidades.Ejercicio3Clientes" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="tipo" source="Entidades.Ejercicio3Vehiculos" target="Enumeradores.Ejercicio3TipoDeVehiculo" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="polizas" source="Servicios.Ejercicio3SeguroServicio" target="Entidades.Ejercicio3Polizas" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Ejercicio3Polizas&gt;"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

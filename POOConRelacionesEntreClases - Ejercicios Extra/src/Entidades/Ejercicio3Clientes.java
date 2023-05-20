@@ -1,24 +1,24 @@
 package Entidades;
 
+import java.util.ArrayList;
+
 public class Ejercicio3Clientes {
 
-    private String nombre;
-    private String apellido;
-    private long dni;
-    private String mail;
-    private String domicilio;
-    private long telefono;
+    private String nombre, apellido, mail, domicilio;
+    private long dni, telefono;
+    private ArrayList<Ejercicio3Polizas> polizaCliente;
 
     public Ejercicio3Clientes() {
     }
 
-    public Ejercicio3Clientes(String nombre, String apellido, long dni, String mail, String domicilio, long telefono) {
+    public Ejercicio3Clientes(String nombre, String apellido, String mail, String domicilio, long dni, long telefono, ArrayList<Ejercicio3Polizas> polizaCliente) {
         this.nombre = nombre;
         this.apellido = apellido;
-        this.dni = dni;
         this.mail = mail;
         this.domicilio = domicilio;
+        this.dni = dni;
         this.telefono = telefono;
+        this.polizaCliente = polizaCliente;
     }
 
     public String getNombre() {
@@ -37,14 +37,6 @@ public class Ejercicio3Clientes {
         this.apellido = apellido;
     }
 
-    public long getDni() {
-        return dni;
-    }
-
-    public void setDni(long dni) {
-        this.dni = dni;
-    }
-
     public String getMail() {
         return mail;
     }
@@ -61,6 +53,14 @@ public class Ejercicio3Clientes {
         this.domicilio = domicilio;
     }
 
+    public long getDni() {
+        return dni;
+    }
+
+    public void setDni(long dni) {
+        this.dni = dni;
+    }
+
     public long getTelefono() {
         return telefono;
     }
@@ -69,9 +69,17 @@ public class Ejercicio3Clientes {
         this.telefono = telefono;
     }
 
+    public ArrayList<Ejercicio3Polizas> getPolizaCliente() {
+        return polizaCliente;
+    }
+
+    public void setPolizaCliente(ArrayList<Ejercicio3Polizas> polizaCliente) {
+        this.polizaCliente = polizaCliente;
+    }
+
     @Override
     public String toString() {
-        return "Ejercicio3Clientes{" + "nombre=" + nombre + ", apellido=" + apellido + ", dni=" + dni + ", mail=" + mail + ", domicilio=" + domicilio + ", telefono=" + telefono + '}';
+        return "Ejercicio3Clientes{" + "Nombre: " + nombre + ", Apellido: " + apellido + ", Mail: " + mail + ", Domicilio: " + domicilio + ", DNI: " + dni + ", Teléfono: " + telefono + ",\n Póliza Cliente: " + polizaCliente + '}';
     }
     
 }

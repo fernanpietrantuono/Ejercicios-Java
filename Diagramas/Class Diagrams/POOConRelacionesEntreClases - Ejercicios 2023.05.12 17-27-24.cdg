@@ -2,7 +2,7 @@
 
 <ClassDiagram name="POOConRelacionesEntreClases - Ejercicios">
   <ClassDiagramComponents>
-    <Class name="Ejercicio1CrearPersonasYPerros" package="Ejecutores" visibility="public" xPosition="20.0" yPosition="20.0">
+    <Class name="Ejercicio1CrearPersonasYPerros" package="Ejecutores" visibility="public" xPosition="208.0" yPosition="962.0">
       <Fields/>
       <Constructors/>
       <Methods>
@@ -11,7 +11,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="Ejercicio2RuletaRusaDeAgua" package="Ejecutores" visibility="public" xPosition="320.0" yPosition="20.0">
+    <Class name="Ejercicio2RuletaRusaDeAgua" package="Ejecutores" visibility="public" xPosition="768.0" yPosition="841.0">
       <Fields/>
       <Constructors/>
       <Methods>
@@ -20,7 +20,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="Ejercicio3IniciarPartida" package="Ejecutores" visibility="public" xPosition="620.0" yPosition="20.0">
+    <Class name="Ejercicio3IniciarPartida" package="Ejecutores" visibility="public" xPosition="1621.0" yPosition="769.0">
       <Fields/>
       <Constructors/>
       <Methods>
@@ -29,7 +29,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="Ejercicio1Perro" package="Entidades" visibility="public" xPosition="918.0" yPosition="542.0">
+    <Class name="Ejercicio1Perro" package="Entidades" visibility="public" xPosition="109.0" yPosition="544.0">
       <Fields>
         <Field name="nombre" type="String" visibility="private"/>
         <Field name="raza" type="String" visibility="private"/>
@@ -65,7 +65,7 @@
         <Method name="toString" returnType="String" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="Ejercicio1Persona" package="Entidades" visibility="public" xPosition="841.0" yPosition="20.0">
+    <Class name="Ejercicio1Persona" package="Entidades" visibility="public" xPosition="32.0" yPosition="20.0">
       <Fields>
         <Field name="nombre" type="String" visibility="private"/>
         <Field name="apellido" type="String" visibility="private"/>
@@ -107,7 +107,7 @@
         <Method name="toString" returnType="String" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="Ejercicio2Juego" package="Entidades" visibility="public" xPosition="1741.0" yPosition="20.0">
+    <Class name="Ejercicio2Juego" package="Entidades" visibility="public" xPosition="1162.0" yPosition="311.0">
       <Fields>
         <Field name="jugadores" type="ArrayList&lt;Ejercicio2Jugador&gt;" visibility="private"/>
         <Field name="r" type="Ejercicio2RevolverDeAgua" visibility="private"/>
@@ -119,7 +119,7 @@
         <Method name="ronda" returnType="void" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="Ejercicio2Jugador" package="Entidades" visibility="public" xPosition="1680.0" yPosition="328.0">
+    <Class name="Ejercicio2Jugador" package="Entidades" visibility="public" xPosition="683.0" yPosition="20.0">
       <Fields>
         <Field name="ID" type="Integer" visibility="private"/>
         <Field name="nombre" type="String" visibility="private"/>
@@ -152,7 +152,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="Ejercicio2RevolverDeAgua" package="Entidades" visibility="public" xPosition="2162.0" yPosition="163.0">
+    <Class name="Ejercicio2RevolverDeAgua" package="Entidades" visibility="public" xPosition="683.0" yPosition="489.0">
       <Fields>
         <Field name="posActual" type="Integer" visibility="private"/>
         <Field name="posAgua" type="Integer" visibility="private"/>
@@ -179,7 +179,7 @@
         <Method name="siguienteChorro" returnType="void" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="Ejercicio3Baraja" package="Entidades" visibility="public" xPosition="37.0" yPosition="163.0">
+    <Class name="Ejercicio3Baraja" package="Entidades" visibility="public" xPosition="1473.0" yPosition="20.0">
       <Fields>
         <Field name="baraja" type="ArrayList&lt;Ejercicio3Carta&gt;" visibility="private"/>
         <Field name="leer" type="Scanner" visibility="private"/>
@@ -208,7 +208,7 @@
         <Method name="mostrarBaraja" returnType="void" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="Ejercicio3Carta" package="Entidades" visibility="public" xPosition="144.0" yPosition="563.0">
+    <Class name="Ejercicio3Carta" package="Entidades" visibility="public" xPosition="1580.0" yPosition="461.0">
       <Fields>
         <Field name="numero" type="Integer" visibility="private"/>
         <Field name="palo" type="String" visibility="private"/>
@@ -234,12 +234,12 @@
     </Class>
   </ClassDiagramComponents>
   <ClassDiagramRelations>
-    <UseRelation source="Entidades.Ejercicio3Baraja" target="Entidades.Ejercicio3Carta" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="mascota" source="Entidades.Ejercicio1Persona" target="Entidades.Ejercicio1Perro" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="baraja" source="Entidades.Ejercicio3Baraja" target="Entidades.Ejercicio3Carta" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Ejercicio3Carta&gt;"/>
-    <UseRelation source="Entidades.Ejercicio1Persona" target="Entidades.Ejercicio1Perro" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation source="Entidades.Ejercicio2Jugador" target="Entidades.Ejercicio2RevolverDeAgua" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="r" source="Entidades.Ejercicio2Juego" target="Entidades.Ejercicio2RevolverDeAgua" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
     <HasRelation name="jugadores" source="Entidades.Ejercicio2Juego" target="Entidades.Ejercicio2Jugador" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Ejercicio2Jugador&gt;"/>
+    <UseRelation source="Entidades.Ejercicio3Baraja" target="Entidades.Ejercicio3Carta" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Entidades.Ejercicio1Persona" target="Entidades.Ejercicio1Perro" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="baraja" source="Entidades.Ejercicio3Baraja" target="Entidades.Ejercicio3Carta" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Ejercicio3Carta&gt;"/>
+    <HasRelation name="r" source="Entidades.Ejercicio2Juego" target="Entidades.Ejercicio2RevolverDeAgua" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="mascota" source="Entidades.Ejercicio1Persona" target="Entidades.Ejercicio1Perro" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Entidades.Ejercicio2Jugador" target="Entidades.Ejercicio2RevolverDeAgua" sourceCardinality="1..1" targetCardinality="1..1"/>
   </ClassDiagramRelations>
 </ClassDiagram>

@@ -1,22 +1,22 @@
 package Entidades;
 
-import java.util.Date;
+import Enumeradores.Ejercicio3FormaDePago;
+import java.time.LocalDate;
 
 public class Ejercicio3Cuotas {
 
     private int numCuota;
     private double montoTotalCuota;
-    private boolean pagada;
-    private Date vencimiento;
-    private String formaDePago;
+    private boolean pagada = false;
+    private LocalDate vencimiento;
+    private Ejercicio3FormaDePago formaDePago;
 
     public Ejercicio3Cuotas() {
     }
 
-    public Ejercicio3Cuotas(int numCuota, double montoTotalCuota, boolean pagada, Date vencimiento, String formaDePago) {
+    public Ejercicio3Cuotas(int numCuota, double montoTotalCuota, LocalDate vencimiento, Ejercicio3FormaDePago formaDePago) {
         this.numCuota = numCuota;
         this.montoTotalCuota = montoTotalCuota;
-        this.pagada = pagada;
         this.vencimiento = vencimiento;
         this.formaDePago = formaDePago;
     }
@@ -45,25 +45,25 @@ public class Ejercicio3Cuotas {
         this.pagada = pagada;
     }
 
-    public Date getVencimiento() {
+    public LocalDate getVencimiento() {
         return vencimiento;
     }
 
-    public void setVencimiento(Date vencimiento) {
+    public void setVencimiento(LocalDate vencimiento) {
         this.vencimiento = vencimiento;
     }
 
-    public String getFormaDePago() {
+    public Ejercicio3FormaDePago getFormaDePago() {
         return formaDePago;
     }
 
-    public void setFormaDePago(String formaDePago) {
+    public void setFormaDePago(Ejercicio3FormaDePago formaDePago) {
         this.formaDePago = formaDePago;
     }
 
     @Override
     public String toString() {
-        return "Ejercicio3Cuotas{" + "numCuota=" + numCuota + ", montoTotalCuota=" + montoTotalCuota + ", pagada=" + pagada + ", vencimiento=" + vencimiento + ", formaDePago=" + formaDePago + '}';
+        return "Ejercicio3Cuotas{" + "numCuota=" + numCuota + ", montoTotalCuota=" + montoTotalCuota + ", pagada=" + pagada + ", vencimiento=" + vencimiento + ", formaDePago=" + formaDePago + "}\n";
     }
     
 }

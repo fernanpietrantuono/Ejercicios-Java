@@ -1,32 +1,36 @@
 package Entidades;
 
+import Enumeradores.Ejercicio3Cobertura;
+import Enumeradores.Ejercicio3FormaDePago;
+import java.util.ArrayList;
 import java.util.Date;
 
 public class Ejercicio3Polizas {
 
-    private int numPoliza;
-    private Date inicioPoliza;
-    private Date finPoliza;
-    private int cantCuotas;
-    private String formaDePago;
-    private double montoTotalAsegurado;
+    private int numPoliza, cantCuotas;
+    private Date inicioPoliza, finPoliza;
+    private Ejercicio3FormaDePago formaDePago;
     private boolean granizo;
-    private double montoMaxGranizo;
-    private String cobertura;
+    private double montoMaxGranizo, montoTotalAsegurado;
+    private Ejercicio3Cobertura cobertura;
+    private Ejercicio3Vehiculos vehiculo;
+    private ArrayList<Ejercicio3Cuotas> cuotas = new ArrayList();
 
     public Ejercicio3Polizas() {
     }
 
-    public Ejercicio3Polizas(int numPoliza, Date inicioPoliza, Date finPoliza, int cantCuotas, String formaDePago, double montoTotalAsegurado, boolean granizo, double montoMaxGranizo, String cobertura) {
+    public Ejercicio3Polizas(int numPoliza, int cantCuotas, Date inicioPoliza, Date finPoliza, Ejercicio3FormaDePago formaDePago, boolean granizo, double montoMaxGranizo, double montoTotalAsegurado, Ejercicio3Cobertura cobertura, Ejercicio3Vehiculos vehiculo, ArrayList<Ejercicio3Cuotas> cuotas) {
         this.numPoliza = numPoliza;
+        this.cantCuotas = cantCuotas;
         this.inicioPoliza = inicioPoliza;
         this.finPoliza = finPoliza;
-        this.cantCuotas = cantCuotas;
         this.formaDePago = formaDePago;
-        this.montoTotalAsegurado = montoTotalAsegurado;
         this.granizo = granizo;
         this.montoMaxGranizo = montoMaxGranizo;
+        this.montoTotalAsegurado = montoTotalAsegurado;
         this.cobertura = cobertura;
+        this.vehiculo = vehiculo;
+        this.cuotas = cuotas;
     }
 
     public int getNumPoliza() {
@@ -35,6 +39,14 @@ public class Ejercicio3Polizas {
 
     public void setNumPoliza(int numPoliza) {
         this.numPoliza = numPoliza;
+    }
+
+    public int getCantCuotas() {
+        return cantCuotas;
+    }
+
+    public void setCantCuotas(int cantCuotas) {
+        this.cantCuotas = cantCuotas;
     }
 
     public Date getInicioPoliza() {
@@ -53,28 +65,12 @@ public class Ejercicio3Polizas {
         this.finPoliza = finPoliza;
     }
 
-    public int getCantCuotas() {
-        return cantCuotas;
-    }
-
-    public void setCantCuotas(int cantCuotas) {
-        this.cantCuotas = cantCuotas;
-    }
-
-    public String getFormaDePago() {
+    public Ejercicio3FormaDePago getFormaDePago() {
         return formaDePago;
     }
 
-    public void setFormaDePago(String formaDePago) {
+    public void setFormaDePago(Ejercicio3FormaDePago formaDePago) {
         this.formaDePago = formaDePago;
-    }
-
-    public double getMontoTotalAsegurado() {
-        return montoTotalAsegurado;
-    }
-
-    public void setMontoTotalAsegurado(double montoTotalAsegurado) {
-        this.montoTotalAsegurado = montoTotalAsegurado;
     }
 
     public boolean isGranizo() {
@@ -93,17 +89,41 @@ public class Ejercicio3Polizas {
         this.montoMaxGranizo = montoMaxGranizo;
     }
 
-    public String getCobertura() {
+    public double getMontoTotalAsegurado() {
+        return montoTotalAsegurado;
+    }
+
+    public void setMontoTotalAsegurado(double montoTotalAsegurado) {
+        this.montoTotalAsegurado = montoTotalAsegurado;
+    }
+
+    public Ejercicio3Cobertura getCobertura() {
         return cobertura;
     }
 
-    public void setCobertura(String cobertura) {
+    public void setCobertura(Ejercicio3Cobertura cobertura) {
         this.cobertura = cobertura;
+    }
+
+    public Ejercicio3Vehiculos getVehiculo() {
+        return vehiculo;
+    }
+
+    public void setVehiculo(Ejercicio3Vehiculos vehiculo) {
+        this.vehiculo = vehiculo;
+    }
+
+    public ArrayList<Ejercicio3Cuotas> getCuotas() {
+        return cuotas;
+    }
+
+    public void setCuotas(ArrayList<Ejercicio3Cuotas> cuotas) {
+        this.cuotas = cuotas;
     }
 
     @Override
     public String toString() {
-        return "Ejercicio3Polizas{" + "numPoliza=" + numPoliza + ", inicioPoliza=" + inicioPoliza + ", finPoliza=" + finPoliza + ", cantCuotas=" + cantCuotas + ", formaDePago=" + formaDePago + ", montoTotalAsegurado=" + montoTotalAsegurado + ", granizo=" + granizo + ", montoMaxGranizo=" + montoMaxGranizo + ", cobertura=" + cobertura + '}';
+        return "Ejercicio3Polizas{\n" + "numPoliza=" + numPoliza + ", cantCuotas=" + cantCuotas + ", inicioPoliza=" + inicioPoliza + ", finPoliza=" + finPoliza + ", formaDePago=" + formaDePago + ",\n granizo=" + granizo + ", montoMaxGranizo=" + montoMaxGranizo + ", montoTotalAsegurado=" + montoTotalAsegurado + ", cobertura=" + cobertura + ",\n vehiculo=" + vehiculo + ",\n cuotas=" + cuotas + '}';
     }
     
 }

@@ -4,7 +4,7 @@ import Entidades.Ejercicio2Cine;
 import Entidades.Ejercicio2Pelicula;
 import Servicios.Ejercicio2CineServicio;
 
-public class Ejercicio2VerificarSalaDeCine {
+public class Ejercicio2CrearSalaDeCine {
 
     public static void main(String[] args) {
         Ejercicio2CineServicio cs = new Ejercicio2CineServicio();
