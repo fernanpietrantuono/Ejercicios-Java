@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="POOConHerencia">
+  <ClassDiagramComponents>
+    <Class name="PracticaAnimales" package="Ejecutores" visibility="public" xPosition="161.0" yPosition="412.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="PracticaInterfaz" package="Ejecutores" visibility="public" xPosition="811.0" yPosition="412.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Animal" package="Entidades" visibility="public" xPosition="178.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="hacerRuido" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Gato" package="Entidades" visibility="public" xPosition="20.0" yPosition="211.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="hacerRuido" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Perro" package="Entidades" visibility="public" xPosition="336.0" yPosition="211.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="hacerRuido" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Saludo1" package="Entidades" visibility="public" xPosition="670.0" yPosition="211.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="saludar" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Saludo2" package="Entidades" visibility="public" xPosition="986.0" yPosition="211.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="saludar" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Interface name="Interfaz" package="Interfaces" visibility="public" xPosition="828.0" yPosition="26.0">
+      <Methods>
+        <Method name="saludar" returnType="void" visibility="public" isAbstract="true"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Entidades.Saludo1" target="Interfaces.Interfaz"/>
+    <IsRelation name="is" source="Entidades.Perro" target="Entidades.Animal"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Entidades.Saludo2" target="Interfaces.Interfaz"/>
+    <IsRelation name="is" source="Entidades.Gato" target="Entidades.Animal"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

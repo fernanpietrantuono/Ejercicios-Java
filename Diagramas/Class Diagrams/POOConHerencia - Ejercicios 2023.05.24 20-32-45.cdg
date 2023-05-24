@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="POOConHerencia - Ejercicios">
+  <ClassDiagramComponents>
+    <Class name="Ejercicio1VerInfoAnimales" package="Ejecutores" visibility="public" xPosition="445.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Ejercicio4VerAreasYPerimetros" package="Ejecutores" visibility="public" xPosition="2295.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Ejercicios2y3ComprarElectros" package="Ejecutores" visibility="public" xPosition="1429.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Ejercicio1Animal" package="Entidades" visibility="public" xPosition="334.0" yPosition="185.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="protected"/>
+        <Field name="edad" type="int" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="alimento"/>
+          <Argument type="String" name="raza"/>
+          <Argument type="int" name="edad"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="alimentarse" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Ejercicio1Caballo" package="Entidades" visibility="public" xPosition="25.0" yPosition="448.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="alimento"/>
+          <Argument type="String" name="raza"/>
+          <Argument type="int" name="edad"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="alimentarse" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Ejercicio1Gato" package="Entidades" visibility="public" xPosition="638.0" yPosition="445.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="alimento"/>
+          <Argument type="String" name="raza"/>
+          <Argument type="int" name="edad"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="alimentarse" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Ejercicio1Perro" package="Entidades" visibility="public" xPosition="338.0" yPosition="622.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="alimento"/>
+          <Argument type="String" name="raza"/>
+          <Argument type="int" name="edad"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="alimentarse" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Ejercicio4Circulo" package="Entidades" visibility="public" xPosition="2122.0" yPosition="445.0">
+      <Fields>
+        <Field name="radio" type="float" visibility="private"/>
+        <Field name="leer" type="Scanner" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="float" name="radio"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getRadio" returnType="float" visibility="public"/>
+        <Method name="setRadio" returnType="void" visibility="public">
+          <Argument type="float" name="radio"/>
+        </Method>
+        <Method name="generarRadio" returnType="void" visibility="public"/>
+        <Method name="area" returnType="double" visibility="public"/>
+        <Method name="perimetro" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Ejercicio4Rectangulo" package="Entidades" visibility="public" xPosition="2499.0" yPosition="448.0">
+      <Fields>
+        <Field name="base" type="int" visibility="private"/>
+        <Field name="altura" type="int" visibility="private"/>
+        <Field name="leer" type="Scanner" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="int" name="base"/>
+          <Argument type="int" name="altura"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getBase" returnType="int" visibility="public"/>
+        <Method name="setBase" returnType="void" visibility="public">
+          <Argument type="int" name="base"/>
+        </Method>
+        <Method name="getAltura" returnType="int" visibility="public"/>
+        <Method name="setAltura" returnType="void" visibility="public">
+          <Argument type="int" name="altura"/>
+        </Method>
+        <Method name="generarBaseYAltura" returnType="void" visibility="public"/>
+        <Method name="area" returnType="double" visibility="public"/>
+        <Method name="perimetro" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Ejercicios2y3Electrodomestico" package="Entidades" visibility="public" xPosition="1264.0" yPosition="185.0">
+      <Fields>
+        <Field name="precio" type="float" visibility="protected"/>
+        <Field name="color" type="String" visibility="protected"/>
+        <Field name="consumoEnergetico" type="char" visibility="protected"/>
+        <Field name="leer" type="Scanner" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="float" name="precio"/>
+          <Argument type="float" name="peso"/>
+          <Argument type="String" name="color"/>
+          <Argument type="char" name="consumoEnergetico"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getPrecio" returnType="float" visibility="public"/>
+        <Method name="setPrecio" returnType="void" visibility="public">
+          <Argument type="float" name="precio"/>
+        </Method>
+        <Method name="getPeso" returnType="float" visibility="public"/>
+        <Method name="setPeso" returnType="void" visibility="public">
+          <Argument type="float" name="peso"/>
+        </Method>
+        <Method name="getColor" returnType="String" visibility="public"/>
+        <Method name="setColor" returnType="void" visibility="public">
+          <Argument type="String" name="color"/>
+        </Method>
+        <Method name="getConsumoEnergetico" returnType="char" visibility="public"/>
+        <Method name="setConsumoEnergetico" returnType="void" visibility="public">
+          <Argument type="char" name="consumoEnergetico"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="comprobarConsumoEnergetico" returnType="void" visibility="public">
+          <Argument type="char" name="letra"/>
+        </Method>
+        <Method name="comprobarColor" returnType="void" visibility="public">
+          <Argument type="String" name="color"/>
+        </Method>
+        <Method name="crearElectrodomestico" returnType="void" visibility="public"/>
+        <Method name="precioFinal" returnType="float" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Ejercicios2y3Lavadora" package="Entidades" visibility="public" xPosition="713.0" yPosition="854.0">
+      <Fields>
+        <Field name="carga" type="int" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="int" name="carga"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="int" name="carga"/>
+          <Argument type="float" name="precio"/>
+          <Argument type="float" name="peso"/>
+          <Argument type="String" name="color"/>
+          <Argument type="char" name="consumoEnergetico"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getCarga" returnType="int" visibility="public"/>
+        <Method name="setCarga" returnType="void" visibility="public">
+          <Argument type="int" name="carga"/>
+        </Method>
+        <Method name="crearLavadora" returnType="Ejercicios2y3Lavadora" visibility="public"/>
+        <Method name="precioFinal" returnType="float" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Ejercicios2y3Televisor" package="Entidades" visibility="public" xPosition="1807.0" yPosition="854.0">
+      <Fields>
+        <Field name="resolucion" type="float" visibility="protected"/>
+        <Field name="sintonizadorTDT" type="boolean" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="float" name="resolucion"/>
+          <Argument type="boolean" name="sintonizadorTDT"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="float" name="resolucion"/>
+          <Argument type="boolean" name="sintonizadorTDT"/>
+          <Argument type="float" name="precio"/>
+          <Argument type="float" name="peso"/>
+          <Argument type="String" name="color"/>
+          <Argument type="char" name="consumoEnergetico"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getResolucion" returnType="float" visibility="public"/>
+        <Method name="setResolucion" returnType="void" visibility="public">
+          <Argument type="float" name="resolucion"/>
+        </Method>
+        <Method name="isSintonizadorTDT" returnType="boolean" visibility="public"/>
+        <Method name="setSintonizadorTDT" returnType="void" visibility="public">
+          <Argument type="boolean" name="sintonizadorTDT"/>
+        </Method>
+        <Method name="crearTelevisor" returnType="Ejercicios2y3Televisor" visibility="public"/>
+        <Method name="precioFinal" returnType="float" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Interface name="Ejercicio4CalculosFormas" package="Interfaces" visibility="public" xPosition="2311.0" yPosition="185.0">
+      <Methods>
+        <Method name="area" returnType="double" visibility="public"/>
+        <Method name="perimetro" returnType="double" visibility="public"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="Entidades.Ejercicio1Perro" target="Entidades.Ejercicio1Animal"/>
+    <IsRelation name="is" source="Entidades.Ejercicio1Gato" target="Entidades.Ejercicio1Animal"/>
+    <UseRelation source="Entidades.Ejercicios2y3Lavadora" target="Entidades.Ejercicios2y3Lavadora" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Entidades.Ejercicio4Circulo" target="Interfaces.Ejercicio4CalculosFormas"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Entidades.Ejercicio4Rectangulo" target="Interfaces.Ejercicio4CalculosFormas"/>
+    <IsRelation name="is" source="Entidades.Ejercicio1Caballo" target="Entidades.Ejercicio1Animal"/>
+    <IsRelation name="is" source="Entidades.Ejercicios2y3Televisor" target="Entidades.Ejercicios2y3Electrodomestico"/>
+    <IsRelation name="is" source="Entidades.Ejercicios2y3Lavadora" target="Entidades.Ejercicios2y3Electrodomestico"/>
+    <UseRelation source="Entidades.Ejercicios2y3Televisor" target="Entidades.Ejercicios2y3Televisor" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
