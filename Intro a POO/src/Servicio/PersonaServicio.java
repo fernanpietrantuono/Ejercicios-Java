@@ -4,10 +4,11 @@ import Entidad.Persona;
 import java.util.Scanner;
 
 public class PersonaServicio {
+
     Persona p1 = new Persona();
-    private Scanner leer = new Scanner (System.in).useDelimiter("\n");
-    public void crearPersona(){
-        
+    private Scanner leer = new Scanner(System.in).useDelimiter("\n");
+
+    public void crearPersona() {
         System.out.println("Ingrese el nombre de la persona");
         String nombre = leer.next();
         p1.setNombre(nombre);
@@ -17,10 +18,10 @@ public class PersonaServicio {
         System.out.println("Ingrese el DNI de la persona");
         long dni = leer.nextLong();
         p1.setDni(dni);
-        
     }
-    
-    public void mostrarPersona(){
+
+    public void mostrarPersona() {
         System.out.println(p1);
     }
+    
 }

@@ -7,8 +7,8 @@ public class Ejercicio3PersonaServicio {
 
     public static Scanner leer = new Scanner(System.in).useDelimiter("\n");
 
-    public boolean esMayorDeEdad(Ejercicio3Persona p1) {
-        return p1.getEdad() >= 18;
+    public boolean esMayorDeEdad(Ejercicio3Persona p) {
+        return p.getEdad() >= 18;
     }
 
     public Ejercicio3Persona crearPersona() {
@@ -30,8 +30,8 @@ public class Ejercicio3PersonaServicio {
         return new Ejercicio3Persona(nombre, edad, sexo, peso, altura);
     }
 
-    public int calcularIMC(Ejercicio3Persona p1) {
-        double imc = p1.getPeso() / Math.pow(p1.getAltura(), 2);
+    public int calcularIMC(Ejercicio3Persona p) {
+        double imc = p.getPeso() / Math.pow(p.getAltura(), 2);
         if (imc < 20) {
             return -1;
         } else if (imc <= 25) {

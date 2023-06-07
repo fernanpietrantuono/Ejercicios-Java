@@ -1,4 +1,4 @@
-package pooconcolecciones;
+package Ejecutores;
 
 import java.util.ArrayList;
 import java.util.HashMap;

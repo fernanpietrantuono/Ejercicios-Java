@@ -2,11 +2,9 @@ package Entidades;
 
 public class Ejercicio3Persona {
 
-    public String nombre;
+    public String nombre, sexo;
     public int edad;
-    public String sexo;
-    public double peso;
-    public double altura;
+    public double peso, altura;
 
     public Ejercicio3Persona() {
     }

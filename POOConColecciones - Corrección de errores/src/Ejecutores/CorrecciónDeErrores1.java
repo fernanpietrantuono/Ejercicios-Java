@@ -1,4 +1,4 @@
-package POOConColeccionesCorrecciónDeErrores;
+package Ejecutores;
 
 import java.util.ArrayList;
 import java.util.HashMap;

@@ -7,7 +7,6 @@ import java.util.Scanner;
 public class Ejercicio5PersonaServicio {
 
     private Scanner leer = new Scanner(System.in).useDelimiter("\n");
-    Ejercicio5Persona p1 = new Ejercicio5Persona();
 
     public Ejercicio5Persona crearPersona() {
         System.out.println("Ingrese su nombre");

@@ -1,6 +1,5 @@
 package Practica;
 
-import Entidad.Persona;
 import Servicio.PersonaServicio;
 
 public class RegistroPersonas {
