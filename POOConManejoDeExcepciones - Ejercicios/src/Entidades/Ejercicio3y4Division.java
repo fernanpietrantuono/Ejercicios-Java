@@ -4,16 +4,16 @@ import static java.lang.Integer.parseInt;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Ejercicio3Division {
+public class Ejercicio3y4Division {
 
     private int num1;
     private int num2;
     private Scanner leer = new Scanner(System.in);
 
-    public Ejercicio3Division() {
+    public Ejercicio3y4Division() {
     }
 
-    public Ejercicio3Division(int num1, int num2) {
+    public Ejercicio3y4Division(int num1, int num2) {
         this.num1 = num1;
         this.num2 = num2;
     }
